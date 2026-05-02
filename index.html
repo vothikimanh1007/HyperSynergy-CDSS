@@ -154,6 +154,18 @@
 
                 </div>
 
+                <!-- NEW: Final Interpretation & Recommendation Panel -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6 relative">
+                    <h3 class="text-sm font-bold text-gray-800 mb-3 flex items-center">
+                        <i class="fa-solid fa-clipboard-check text-indigo-500 mr-2 text-lg"></i> Executive Summary & Recommendation
+                    </h3>
+                    <div id="finalRecommendation" class="text-sm text-gray-600 bg-gray-50 p-4 rounded-r-lg border-l-4 border-gray-300 shadow-sm transition-all duration-500">
+                        <div class="flex items-center italic text-gray-400">
+                            <i class="fa-solid fa-hourglass-half mr-2"></i> Add herbs and run the AI analysis to generate a final clinical interpretation here.
+                        </div>
+                    </div>
+                </div>
+
                 <!-- XAI Table & Legend -->
                 <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
                     <div class="px-6 py-4 border-b bg-gray-50">
@@ -322,6 +334,10 @@
             scoreDisplay.innerText = "Calc...";
             scoreDisplay.classList.add("animate-pulse", "text-blue-500");
             document.getElementById('clinicalAdvice').innerText = "Querying PyTorch Server...";
+            
+            // Reset Recommendation Box to loading state
+            document.getElementById('finalRecommendation').innerHTML = '<div class="flex items-center italic text-gray-400"><i class="fa-solid fa-circle-notch fa-spin mr-2"></i> Analyzing topological manifolds...</div>';
+            document.getElementById('finalRecommendation').className = "text-sm text-gray-600 bg-gray-50 p-4 rounded-r-lg border-l-4 border-gray-300 shadow-sm transition-all duration-500";
 
             // THE URL OF YOUR HUGGING FACE BACKEND
             const PYTHON_BACKEND_URL = "https://vothikimanh-hypersynergy-cdss.hf.space/api/predict";
@@ -347,6 +363,8 @@
                 scoreDisplay.className = "text-xl font-bold text-red-500";
                 scoreDisplay.innerText = "Server Offline";
                 document.getElementById('clinicalAdvice').innerText = "Make sure your Hugging Face space is 'Running'.";
+                document.getElementById('finalRecommendation').innerHTML = '<div class="text-red-500"><i class="fa-solid fa-triangle-exclamation mr-2"></i> Backend connection failed. Cannot generate recommendation.</div>';
+                document.getElementById('finalRecommendation').className = "text-sm text-gray-600 bg-red-50 p-4 rounded-r-lg border-l-4 border-red-500 shadow-sm transition-all duration-500";
             }
         }
 
@@ -456,6 +474,49 @@
                     <span>Protector (Buffer) ${hasBuffer ? 'Found' : 'Missing!'}</span>
                 </div>
             `;
+
+            // 5. Generate Final Executive Summary & Recommendation
+            const recommendationBox = document.getElementById('finalRecommendation');
+            let recHTML = "";
+            let borderClass = "";
+
+            if (percent >= 80 && hasArchitect && hasBuffer) {
+                borderClass = "border-l-4 border-green-500 bg-green-50";
+                recHTML = `
+                    <div class="flex flex-col gap-2">
+                        <div><strong><span class="text-green-700">Clinical Interpretation: Excellent Viability.</span></strong> This formula demonstrates strong mathematical synergy (${percent}%) and is structurally complete according to ancient formulation principles. The Architect successfully directs the primary healing, while the presence of a Buffer ensures biological safety and reduces toxicity.</div>
+                        <div class="mt-1"><strong>Recommendation:</strong> Highly viable for clinical application and further pharmacological testing.</div>
+                    </div>`;
+            } else if (percent >= 80) {
+                borderClass = "border-l-4 border-yellow-500 bg-yellow-50";
+                let missing = [];
+                if (!hasArchitect) missing.push("Main Healer (Architect)");
+                if (!hasBuffer) missing.push("Protector (Buffer)");
+                
+                recHTML = `
+                    <div class="flex flex-col gap-2">
+                        <div><strong><span class="text-yellow-700">Clinical Interpretation: Structurally Incomplete.</span></strong> While the mathematical synergy is high (${percent}%), the formula lacks traditional safety and direction. It is missing a <strong>${missing.join(" and ")}</strong>.</div>
+                        <div class="mt-1"><strong>Recommendation:</strong> Consider adding the missing role(s) to harmonize the prescription and prevent potential side-effects before clinical use.</div>
+                    </div>`;
+            } else if (percent >= 50) {
+                borderClass = "border-l-4 border-blue-500 bg-blue-50";
+                recHTML = `
+                    <div class="flex flex-col gap-2">
+                        <div><strong><span class="text-blue-700">Clinical Interpretation: Moderate Interaction.</span></strong> This combination shows moderate biological interaction but lacks strong synergistic reinforcement. The Poincaré distance suggests the herbs may be targeting disjointed pathways on the manifold.</div>
+                        <div class="mt-1"><strong>Recommendation:</strong> Restructure the formula by introducing stronger Bridging (Minister/Courier) herbs to connect the active components.</div>
+                    </div>`;
+            } else {
+                borderClass = "border-l-4 border-red-500 bg-red-50";
+                recHTML = `
+                    <div class="flex flex-col gap-2">
+                        <div><strong><span class="text-red-700">Clinical Interpretation: High Conflict Risk.</span></strong> This formulation exhibits poor topological synergy (${percent}%). The herbs are situated too far apart on the biological manifold, suggesting divergent or antagonistic pharmacological effects.</div>
+                        <div class="mt-1"><strong>Recommendation:</strong> Not recommended for clinical use. Re-evaluate the core Sovereign herb and rebuild the prescription.</div>
+                    </div>`;
+            }
+
+            // Apply dynamic styling and content to the recommendation box
+            recommendationBox.className = `text-sm text-gray-700 p-4 rounded-r-lg shadow-sm transition-all duration-500 ${borderClass}`;
+            recommendationBox.innerHTML = recHTML;
         }
     </script>
 </body>
