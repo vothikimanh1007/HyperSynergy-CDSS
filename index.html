@@ -14,7 +14,7 @@
         ::-webkit-scrollbar-thumb:hover { background: #a0a0a0; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
 
     <!-- Navbar -->
     <nav class="bg-indigo-900 text-white shadow-lg border-b-4 border-indigo-500">
@@ -32,7 +32,7 @@
     </nav>
 
     <!-- Main Container -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow">
         
         <!-- Welcome & Instructions Banner -->
         <div class="bg-white rounded-xl shadow-sm border border-indigo-100 p-6 mb-8 flex flex-col md:flex-row items-center md:items-start gap-4">
@@ -201,6 +201,407 @@
         </div>
     </div>
 
+    <!-- NEW: About & Contact Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-auto py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            
+            <!-- Project Information -->
+            <div class="max-w-2xl">
+                <h4 class="text-sm font-bold text-indigo-900 mb-2 flex items-center justify-center md:justify-start">
+                    <i class="fa-solid fa-book-medical mr-2 text-indigo-500"></i> About This Project
+                </h4>
+                <p class="text-xs text-gray-500 leading-relaxed">
+                    The HyperSynergy CDSS is the culmination of a Ph.D. research project focusing on Macro-to-Micro Geometric Learning. 
+                    The underlying Graph Neural Network (MATG) is trained on the <strong class="text-gray-700">DoTatLoi-714 benchmark dataset</strong>, 
+                    structuring centuries of Vietnamese Traditional Medicine (VTM) knowledge into a rigorous topological manifold.
+                </p>
+            </div>
+
+            <!-- Author & Contact -->
+            <div class="flex flex-col items-center md:items-end md:text-right text-center mt-6 md:mt-0">
+                <p class="text-sm font-bold text-gray-800">Vo Thi Kim Anh</p>
+                <p class="text-xs font-semibold text-indigo-500 mt-1">Ph.D. Candidate</p>
+                <p class="text-[11px] text-gray-500">VSB - Technical University of Ostrava, Czech Republic</p>
+                <p class="text-xs font-semibold text-indigo-500 mt-2">Researcher</p>
+                <p class="text-[11px] text-gray-500 mb-3">Ton Duc Thang University, Vietnam</p>
+                <div class="flex flex-col items-center md:items-end gap-1">
+                    <a href="mailto:vothikimanh@tdtu.edu.vn" class="text-[11px] font-medium text-indigo-600 hover:text-indigo-800 transition flex items-center">
+                        <i class="fa-solid fa-envelope mr-2 w-3"></i> vothikimanh@tdtu.edu.vn
+                    </a>
+                    <a href="mailto:thi.kim.anh.vo.st@vsb.cz" class="text-[11px] font-medium text-indigo-600 hover:text-indigo-800 transition flex items-center">
+                        <i class="fa-solid fa-envelope mr-2 w-3"></i> thi.kim.anh.vo.st@vsb.cz
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // ==========================================
+        // 1. LOAD DATABASE FOR AUTOCOMPLETE ONLY
+        // ==========================================
+        let allHerbs = [];
+        let currentFormula = [];
+
+        // Load the JSON file (must be in the same GitHub repository)
+        fetch('database.json')
+            .then(response => response.json())
+            .then(data => {
+                allHerbs = Object.keys(data);
+                document.getElementById('herbInput').placeholder = `Search from ${allHerbs.length} herbs...`;
+            })
+            .catch(err => console.error("Could not load database.json for autocomplete.", err));
+
+        // Autocomplete Dropdown logic
+        function showSuggestions() {
+            const input = document.getElementById('herbInput').value.toLowerCase();
+            const box = document.getElementById('suggestions');
+            box.innerHTML = '';
+            if (input === '') { box.classList.add('hidden'); return; }
+
+            const filtered = allHerbs.filter(h => h.toLowerCase().includes(input)).slice(0, 10);
+            if (filtered.length > 0) {
+                box.classList.remove('hidden');
+                filtered.forEach(herb => {
+                    const li = document.createElement('li');
+                    li.className = 'px-4 py-2.5 hover:bg-indigo-50 cursor-pointer text-sm font-medium text-gray-700';
+                    li.innerHTML = `<i class="fa-solid fa-seedling text-indigo-300 mr-2"></i> ${herb}`;
+                    li.onclick = () => {
+                        document.getElementById('herbInput').value = herb;
+                        box.classList.add('hidden');
+                        addHerb();
+                    };
+                    box.appendChild(li);
+                });
+            } else { box.classList.add('hidden'); }
+        }
+
+        // Add herb to formula
+        function addHerb() {
+            const val = document.getElementById('herbInput').value.trim();
+            if (val && !currentFormula.includes(val) && allHerbs.includes(val)) {
+                currentFormula.push(val);
+                renderFormulaList();
+                document.getElementById('herbInput').value = '';
+                document.getElementById('suggestions').classList.add('hidden');
+            }
+        }
+
+        // Remove herb from formula
+        function removeHerb(val) {
+            currentFormula = currentFormula.filter(h => h !== val);
+            renderFormulaList();
+        }
+
+        // Update the visual list
+        function renderFormulaList() {
+            const list = document.getElementById('formulaList');
+            document.getElementById('emptyState').style.display = currentFormula.length === 0 ? 'block' : 'none';
+            list.innerHTML = '';
+            currentFormula.forEach(herb => {
+                list.innerHTML += `<li class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-gray-200 shadow-sm text-sm font-bold text-gray-700">
+                    <span><i class="fa-solid fa-leaf text-green-500 mr-2"></i> ${herb}</span>
+                    <button onclick="removeHerb('${herb}')" class="text-gray-400 hover:text-red-500 hover:bg-red-50 p-1 rounded transition"><i class="fa-solid fa-times"></i></button></li>`;
+            });
+        }
+
+        // ==========================================
+        // 2. SEND DATA TO YOUR PYTHON SERVER (.PTH)
+        // ==========================================
+        async function runLiveAPIAnalysis() {
+            if (currentFormula.length < 2) {
+                alert("Please add at least 2 herbs to analyze synergy.");
+                return;
+            }
+
+            const scoreDisplay = document.getElementById('synergyScore');
+            scoreDisplay.innerText = "Calc...";
+            scoreDisplay.classList.add("animate-pulse", "text-blue-500");
+            document.getElementById('clinicalAdvice').innerText = "Querying PyTorch Server...";
+
+            // THE URL OF YOUR HUGGING FACE BACKEND
+            const PYTHON_BACKEND_URL = "https://vothikimanh-hypersynergy-cdss.hf.space/api/predict";
+            const startTime = performance.now();
+
+            try {
+                const response = await fetch(PYTHON_BACKEND_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ herbs: currentFormula })
+                });
+
+                if (!response.ok) throw new Error("Server disconnected");
+
+                const data = await response.json();
+                const endTime = performance.now();
+                
+                updateDashboard(data, (endTime - startTime).toFixed(0));
+
+            } catch (error) {
+                console.error(error);
+                scoreDisplay.classList.remove("animate-pulse");
+                scoreDisplay.className = "text-xl font-bold text-red-500";
+                scoreDisplay.innerText = "Server Offline";
+                document.getElementById('clinicalAdvice').innerText = "Make sure your Hugging Face space is 'Running'.";
+            }
+        }
+
+        // Update UI with the PyTorch Results
+        function updateDashboard(data, timeMs) {
+            const scoreDisplay = document.getElementById('synergyScore');
+            scoreDisplay.classList.remove("animate-pulse");
+            
+            // 1. Synergy Probability Visuals
+            const percent = Math.round(data.synergy_probability * 100);
+            scoreDisplay.innerText = `${percent}%`;
+            
+            if (percent >= 80) {
+                scoreDisplay.className = "text-3xl font-black text-green-500";
+                document.getElementById('clinicalAdvice').innerHTML = "<span class='text-green-600 font-bold block'>Excellent Synergy!</span> Safe and structurally balanced.";
+            } else if (percent >= 50) {
+                scoreDisplay.className = "text-3xl font-black text-blue-500";
+                document.getElementById('clinicalAdvice').innerHTML = "<span class='text-blue-600 font-bold block'>Moderate Synergy.</span> Consider adding a Buffer or Architect.";
+            } else {<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperSynergy | Live PyTorch API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom scrollbar for the suggestions dropdown */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #c7c7c7; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a0a0a0; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-indigo-900 text-white shadow-lg border-b-4 border-indigo-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-network-wired text-2xl text-indigo-300"></i>
+                    <span class="font-bold text-xl tracking-tight">HyperSynergy CDSS</span>
+                </div>
+                <div class="text-sm font-medium bg-indigo-800 px-4 py-1.5 rounded-full border border-indigo-700 shadow-inner">
+                    PyTorch Backend: <span class="text-green-400 ml-1"><i class="fa-solid fa-circle text-[10px] animate-pulse"></i> Connected</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow">
+        
+        <!-- Welcome & Instructions Banner -->
+        <div class="bg-white rounded-xl shadow-sm border border-indigo-100 p-6 mb-8 flex flex-col md:flex-row items-center md:items-start gap-4">
+            <div class="bg-indigo-100 text-indigo-600 p-4 rounded-full">
+                <i class="fa-solid fa-robot text-2xl"></i>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold text-gray-800 mb-1">Welcome to the AI Synergy Predictor</h1>
+                <p class="text-sm text-gray-600 mb-3">This tool uses a mathematical graph neural network to predict if a combination of traditional herbs will be clinically safe and effective. You don't need to be an IT expert—just follow these steps:</p>
+                <div class="flex flex-wrap gap-4 text-xs font-semibold text-gray-500">
+                    <span class="bg-gray-100 px-3 py-1.5 rounded-md"><strong class="text-indigo-600">1.</strong> Search & Add Herbs</span>
+                    <span class="bg-gray-100 px-3 py-1.5 rounded-md"><strong class="text-indigo-600">2.</strong> Click 'Run AI Analysis'</span>
+                    <span class="bg-gray-100 px-3 py-1.5 rounded-md"><strong class="text-indigo-600">3.</strong> Review the Synergy Score & Roles</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Panel: Builder -->
+            <div class="lg:col-span-1 bg-white rounded-xl shadow-md border border-gray-100 p-6 h-fit">
+                <h2 class="text-lg font-bold border-b pb-2 mb-4 text-gray-700 flex items-center">
+                    <i class="fa-solid fa-mortar-pestle mr-2 text-indigo-500"></i> Build Prescription
+                </h2>
+                
+                <div class="mb-4 relative">
+                    <label class="block text-sm font-medium text-gray-600 mb-1">Search VTM/TCM Herbs</label>
+                    <div class="flex shadow-sm">
+                        <input type="text" id="herbInput" oninput="showSuggestions()" class="flex-1 border border-gray-300 rounded-l-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Loading 714 herbs...">
+                        <button onclick="addHerb()" class="bg-indigo-600 text-white px-4 py-2 rounded-r-md hover:bg-indigo-700 transition">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <ul id="suggestions" class="absolute z-50 w-full bg-white border border-gray-200 rounded-md shadow-xl hidden max-h-48 overflow-y-auto mt-1 divide-y divide-gray-100"></ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-md p-4 min-h-[200px] border border-dashed border-gray-300 relative">
+                    <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Current Formula</h3>
+                    <ul id="formulaList" class="space-y-2"></ul>
+                    <div id="emptyState" class="text-center mt-8">
+                        <i class="fa-solid fa-leaf text-gray-300 text-3xl mb-2"></i>
+                        <p class="text-sm text-gray-500 italic">Formula is empty.</p>
+                        <p class="text-xs text-indigo-400 mt-1">Try adding "Đương Quy" or "Đại táo"</p>
+                    </div>
+                </div>
+
+                <!-- This button triggers the API call -->
+                <button onclick="runLiveAPIAnalysis()" class="w-full mt-6 bg-blue-600 text-white font-bold py-3 px-4 rounded-lg shadow-md hover:bg-blue-700 transition flex justify-center items-center group">
+                    <i class="fa-solid fa-microchip mr-2 group-hover:animate-bounce"></i> Run Live PyTorch Analysis
+                </button>
+            </div>
+
+            <!-- Right Panel: Dashboard -->
+            <div class="lg:col-span-2 space-y-6">
+                
+                <!-- NEW: 3-Column Metric Grid for Better Explainability -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    
+                    <!-- 1. Synergy Score -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 p-5 flex flex-col justify-center items-center relative group">
+                        <!-- Tooltip Hover -->
+                        <div class="absolute top-3 right-3 cursor-pointer">
+                            <i class="fa-solid fa-circle-question text-gray-300 hover:text-indigo-500 transition"></i>
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-6 w-56 bg-gray-800 text-white text-xs rounded-md p-3 shadow-lg pointer-events-none z-20">
+                                This percentage shows the mathematical likelihood that these herbs work well together without causing toxic conflicts.
+                            </div>
+                        </div>
+                        <h3 class="text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-2 text-center">Overall Synergy<br>Probability</h3>
+                        <div class="relative w-24 h-24 flex justify-center items-center bg-gray-50 rounded-full border-4 border-gray-100 mt-1">
+                            <span id="synergyScore" class="text-2xl font-black text-gray-300">--%</span>
+                        </div>
+                        <p id="clinicalAdvice" class="text-[11px] text-center text-gray-400 mt-3 h-8">Awaiting data...</p>
+                    </div>
+
+                    <!-- 2. Biological Distance (Poincare) -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 p-5 relative group flex flex-col justify-between">
+                        <div class="absolute top-3 right-3 cursor-pointer">
+                            <i class="fa-solid fa-circle-question text-gray-300 hover:text-indigo-500 transition"></i>
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-6 w-60 bg-gray-800 text-white text-xs rounded-md p-3 shadow-lg pointer-events-none z-20">
+                                <strong>Poincaré Distance:</strong> A measure of how far apart the herbs are in the AI's hyperbolic geometry. Lower distance means tighter biological synergy.
+                            </div>
+                        </div>
+                        <h3 class="text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-1">Biological Distance<br>(Poincaré Metric)</h3>
+                        
+                        <div class="mt-2 text-center">
+                            <span id="manifoldDist" class="font-mono text-xl text-indigo-600 font-bold bg-indigo-50 px-2 py-1 rounded">--</span>
+                        </div>
+                        
+                        <div class="mt-4 w-full">
+                            <div class="flex justify-between text-[9px] text-gray-400 font-bold mb-1 uppercase">
+                                <span>Tight (Good)</span>
+                                <span>Far (Poor)</span>
+                            </div>
+                            <!-- Visual Distance Gauge -->
+                            <div class="w-full bg-gray-200 rounded-full h-2 relative overflow-hidden">
+                                <div id="distanceGauge" class="bg-gradient-to-r from-green-400 via-yellow-400 to-red-500 h-2 rounded-full transition-all duration-1000" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Formula Composition Checker -->
+                    <div class="bg-white rounded-xl shadow-md border border-gray-100 p-5 relative group flex flex-col justify-between">
+                        <div class="absolute top-3 right-3 cursor-pointer">
+                            <i class="fa-solid fa-circle-question text-gray-300 hover:text-indigo-500 transition"></i>
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-6 w-60 bg-gray-800 text-white text-xs rounded-md p-3 shadow-lg pointer-events-none z-20">
+                                A classic VTM/TCM formula requires a Sovereign (Architect) to direct the healing, and an Assistant (Buffer) to protect the stomach from harsh effects.
+                            </div>
+                        </div>
+                        <h3 class="text-[10px] font-bold text-gray-500 uppercase tracking-wider mb-2 text-center">Formula Balance<br>Composition</h3>
+                        
+                        <div class="flex flex-col gap-2 mt-2" id="compositionChecker">
+                            <div class="flex items-center text-xs text-gray-400 bg-gray-50 p-1.5 rounded border border-gray-100">
+                                <i class="fa-solid fa-circle-xmark text-gray-300 mr-2"></i> <span>Main Healer (Architect)</span>
+                            </div>
+                            <div class="flex items-center text-xs text-gray-400 bg-gray-50 p-1.5 rounded border border-gray-100">
+                                <i class="fa-solid fa-circle-xmark text-gray-300 mr-2"></i> <span>Protector (Buffer)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- XAI Table & Legend -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                    <div class="px-6 py-4 border-b bg-gray-50">
+                        <div class="flex justify-between items-center">
+                            <h2 class="text-lg font-bold text-gray-700">
+                                <i class="fa-solid fa-project-diagram mr-2 text-indigo-500"></i> AI Role Assignments (Quân-Thần-Tá-Sứ)
+                            </h2>
+                            <div class="text-xs font-mono text-gray-400">
+                                Time: <span id="processTime" class="text-indigo-400">-- ms</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Simple Legend for Non-Experts -->
+                        <div class="mt-3 flex flex-wrap gap-3 text-[11px] font-medium text-gray-600 bg-white p-2 rounded border border-gray-200">
+                            <div class="flex items-center"><span class="w-3 h-3 bg-red-100 border border-red-300 rounded-full inline-block mr-1"></span> <strong>Architect (Sovereign):</strong> The Main Healer</div>
+                            <div class="flex items-center"><span class="w-3 h-3 bg-blue-100 border border-blue-300 rounded-full inline-block mr-1"></span> <strong>Bridge (Minister):</strong> Moves the medicine</div>
+                            <div class="flex items-center"><span class="w-3 h-3 bg-green-100 border border-green-300 rounded-full inline-block mr-1"></span> <strong>Buffer (Assistant):</strong> Protects & Harmonizes</div>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-white">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Herb Name</th>
+                                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
+                                        AI Importance (α Weight)
+                                        <i class="fa-solid fa-circle-question text-gray-300 ml-1 cursor-help" title="Higher weight means the AI relies heavily on this herb to anchor the whole formula."></i>
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Clinical Role & Explanation</th>
+                                </tr>
+                            </thead>
+                            <tbody id="xaiTableBody" class="bg-gray-50 divide-y divide-gray-200">
+                                <tr>
+                                    <td colspan="3" class="px-6 py-10 text-center text-gray-400 text-sm bg-white">
+                                        <i class="fa-solid fa-flask text-2xl text-gray-200 mb-2 block"></i>
+                                        Add herbs and click 'Run Analysis' to see the AI's role assignments.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW: About & Contact Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-auto py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            
+            <!-- Project Information -->
+            <div class="max-w-2xl">
+                <h4 class="text-sm font-bold text-indigo-900 mb-2 flex items-center justify-center md:justify-start">
+                    <i class="fa-solid fa-book-medical mr-2 text-indigo-500"></i> About This Project
+                </h4>
+                <p class="text-xs text-gray-500 leading-relaxed">
+                    The HyperSynergy CDSS is the culmination of a Ph.D. research project focusing on Macro-to-Micro Geometric Learning. 
+                    The underlying Graph Neural Network (MATG) is trained on the <strong class="text-gray-700">DoTatLoi-714 benchmark dataset</strong>, 
+                    structuring centuries of Vietnamese Traditional Medicine (VTM) knowledge into a rigorous topological manifold.
+                </p>
+            </div>
+
+            <!-- Author & Contact -->
+            <div class="flex flex-col items-center md:items-end md:text-right text-center mt-6 md:mt-0">
+                <p class="text-sm font-bold text-gray-800">Vo Thi Kim Anh</p>
+                <p class="text-xs font-semibold text-indigo-500 mt-1">Ph.D. Candidate</p>
+                <p class="text-[11px] text-gray-500">VSB - Technical University of Ostrava, Czech Republic</p>
+                <p class="text-xs font-semibold text-indigo-500 mt-2">Researcher</p>
+                <p class="text-[11px] text-gray-500 mb-3">Ton Duc Thang University, Vietnam</p>
+                <div class="flex flex-col items-center md:items-end gap-1">
+                    <a href="mailto:vothikimanh@tdtu.edu.vn" class="text-[11px] font-medium text-indigo-600 hover:text-indigo-800 transition flex items-center">
+                        <i class="fa-solid fa-envelope mr-2 w-3"></i> vothikimanh@tdtu.edu.vn
+                    </a>
+                    <a href="mailto:thi.kim.anh.vo.st@vsb.cz" class="text-[11px] font-medium text-indigo-600 hover:text-indigo-800 transition flex items-center">
+                        <i class="fa-solid fa-envelope mr-2 w-3"></i> thi.kim.anh.vo.st@vsb.cz
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
     <!-- JavaScript Application Logic -->
     <script>
         // ==========================================
@@ -329,6 +730,89 @@
                 document.getElementById('clinicalAdvice').innerHTML = "<span class='text-blue-600 font-bold block'>Moderate Synergy.</span> Consider adding a Buffer or Architect.";
             } else {
                 scoreDisplay.className = "text-3xl font-black text-orange-500";
+                document.getElementById('clinicalAdvice').innerHTML = "<span class='text-orange-600 font-bold block'>Poor Synergy.</span> High risk of clinical conflict.";
+            }
+
+            // 2. Poincare Distance Gauge
+            const rawDistString = data.poincare_distance || "1.500 units";
+            const distVal = parseFloat(rawDistString.replace(/[^\d.-]/g, ''));
+            document.getElementById('manifoldDist').innerText = distVal.toFixed(3);
+            
+            // Map distance to a 0-100% scale for the visual bar (Assuming typical dist is 0.5 to 3.0)
+            const gaugePercent = Math.min(100, Math.max(0, (distVal / 3.0) * 100));
+            document.getElementById('distanceGauge').style.width = `${gaugePercent}%`;
+            
+            document.getElementById('processTime').innerText = `${timeMs} ms`;
+
+            // 3. Formula Balance Checker
+            let hasArchitect = false;
+            let hasBuffer = false;
+
+            // Sort highest alpha to top
+            data.xai_roles.sort((a, b) => b.alpha - a.alpha);
+
+            // 4. Render the XAI Table and evaluate composition
+            const tbody = document.getElementById('xaiTableBody');
+            tbody.innerHTML = '';
+            
+            data.xai_roles.forEach(herb => {
+                let tagColor = "bg-gray-100 text-gray-800 border-gray-200";
+                let simpleExplain = "";
+
+                if (herb.role.includes("Architect")) {
+                    tagColor = "bg-red-50 text-red-700 border-red-200";
+                    simpleExplain = "Guides the main healing direction.";
+                    hasArchitect = true;
+                }
+                if (herb.role.includes("Bridge")) {
+                    tagColor = "bg-blue-50 text-blue-700 border-blue-200";
+                    simpleExplain = "Moves medicine to biological targets.";
+                }
+                if (herb.role.includes("Buffer")) {
+                    tagColor = "bg-green-50 text-green-700 border-green-200";
+                    simpleExplain = "Protects the body from harsh side-effects.";
+                    hasBuffer = true;
+                }
+
+                tbody.innerHTML += `
+                    <tr class="bg-white hover:bg-gray-50 transition">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800"><i class="fa-solid fa-leaf text-gray-300 mr-2"></i> ${herb.name}</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="flex items-center">
+                                <span class="text-sm font-bold text-gray-900 w-10">${herb.alpha.toFixed(2)}</span>
+                                <div class="w-16 bg-gray-200 rounded-full h-1.5 ml-2">
+                                    <div class="bg-indigo-500 h-1.5 rounded-full" style="width: ${herb.alpha * 100}%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="flex flex-col gap-1">
+                                <span class="px-3 py-1 inline-flex w-fit text-[11px] leading-5 font-bold rounded-full border ${tagColor}">
+                                    ${herb.role}
+                                </span>
+                                <span class="text-[10px] text-gray-500 italic ml-1">${simpleExplain}</span>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            });
+
+            // Update Composition UI
+            const compUI = document.getElementById('compositionChecker');
+            compUI.innerHTML = `
+                <div class="flex items-center text-xs p-1.5 rounded border ${hasArchitect ? 'bg-green-50 border-green-200 text-green-700' : 'bg-red-50 border-red-200 text-red-700'}">
+                    <i class="fa-solid ${hasArchitect ? 'fa-circle-check text-green-500' : 'fa-circle-xmark text-red-400'} mr-2"></i> 
+                    <span>Main Healer (Architect) ${hasArchitect ? 'Found' : 'Missing!'}</span>
+                </div>
+                <div class="flex items-center text-xs p-1.5 rounded border ${hasBuffer ? 'bg-green-50 border-green-200 text-green-700' : 'bg-orange-50 border-orange-200 text-orange-700'}">
+                    <i class="fa-solid ${hasBuffer ? 'fa-circle-check text-green-500' : 'fa-circle-xmark text-orange-400'} mr-2"></i> 
+                    <span>Protector (Buffer) ${hasBuffer ? 'Found' : 'Missing!'}</span>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
                 document.getElementById('clinicalAdvice').innerHTML = "<span class='text-orange-600 font-bold block'>Poor Synergy.</span> High risk of clinical conflict.";
             }
 
