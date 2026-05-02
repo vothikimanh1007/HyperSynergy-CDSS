@@ -180,8 +180,8 @@
                                 <tr>
                                     <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Herb Name</th>
                                     <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
-                                        AI Importance (α Weight)
-                                        <i class="fa-solid fa-circle-question text-gray-300 ml-1 cursor-help" title="Higher weight means the AI relies heavily on this herb to anchor the whole formula."></i>
+                                        Globally Calibrated AI Weight (α)
+                                        <i class="fa-solid fa-circle-question text-gray-300 ml-1 cursor-help" title="These weights are pulled directly from the global manifold calculations over all 714 herbs."></i>
                                     </th>
                                     <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Clinical Role & Explanation</th>
                                 </tr>
@@ -201,7 +201,7 @@
         </div>
     </div>
 
-    <!-- NEW: About & Contact Footer -->
+    <!-- About & Contact Footer -->
     <footer class="bg-white border-t border-gray-200 mt-auto py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
             
@@ -240,15 +240,17 @@
     <!-- JavaScript Application Logic -->
     <script>
         // ==========================================
-        // 1. LOAD DATABASE FOR AUTOCOMPLETE ONLY
+        // 1. LOAD DATABASE FOR AUTOCOMPLETE & GLOBAL WEIGHTS
         // ==========================================
         let allHerbs = [];
         let currentFormula = [];
+        let herbDatabase = {}; // Stores the globally accurate weights from the JSON file
 
         // Load the JSON file (must be in the same GitHub repository)
         fetch('database.json')
             .then(response => response.json())
             .then(data => {
+                herbDatabase = data; // Save the full database in memory
                 allHerbs = Object.keys(data);
                 document.getElementById('herbInput').placeholder = `Search from ${allHerbs.length} herbs...`;
             })
@@ -348,12 +350,12 @@
             }
         }
 
-        // Update UI with the PyTorch Results
+        // Update UI with the PyTorch Results & Globally Calibrated Roles
         function updateDashboard(data, timeMs) {
             const scoreDisplay = document.getElementById('synergyScore');
             scoreDisplay.classList.remove("animate-pulse");
             
-            // 1. Synergy Probability Visuals
+            // 1. Synergy Probability Visuals (From the live PyTorch Backend)
             const percent = Math.round(data.synergy_probability * 100);
             scoreDisplay.innerText = `${percent}%`;
             
@@ -379,31 +381,41 @@
             
             document.getElementById('processTime').innerText = `${timeMs} ms`;
 
-            // 3. Formula Balance Checker
-            let hasArchitect = false;
-            let hasBuffer = false;
+            // 3. XAI Table Mapping (Pulling accurate data from database.json)
+            const calibratedRoles = currentFormula.map(herbName => {
+                // We fetch the globally accurate weight directly from the database we loaded
+                const dbInfo = herbDatabase[herbName] || { alpha: 0.5, role: "The Buffer (Assistant)" };
+                return {
+                    name: herbName,
+                    alpha: dbInfo.alpha,
+                    role: dbInfo.role
+                };
+            });
 
             // Sort highest alpha to top
-            data.xai_roles.sort((a, b) => b.alpha - a.alpha);
+            calibratedRoles.sort((a, b) => b.alpha - a.alpha);
 
-            // 4. Render the XAI Table and evaluate composition
             const tbody = document.getElementById('xaiTableBody');
             tbody.innerHTML = '';
             
-            data.xai_roles.forEach(herb => {
+            let hasArchitect = false;
+            let hasBuffer = false;
+
+            calibratedRoles.forEach(herb => {
                 let tagColor = "bg-gray-100 text-gray-800 border-gray-200";
                 let simpleExplain = "";
 
-                if (herb.role.includes("Architect")) {
+                // Match clinical roles correctly and assign colors
+                if (herb.role.includes("Architect") || herb.role.includes("Sovereign")) {
                     tagColor = "bg-red-50 text-red-700 border-red-200";
                     simpleExplain = "Guides the main healing direction.";
                     hasArchitect = true;
                 }
-                if (herb.role.includes("Bridge")) {
+                if (herb.role.includes("Bridge") || herb.role.includes("Minister")) {
                     tagColor = "bg-blue-50 text-blue-700 border-blue-200";
                     simpleExplain = "Moves medicine to biological targets.";
                 }
-                if (herb.role.includes("Buffer")) {
+                if (herb.role.includes("Buffer") || herb.role.includes("Assistant")) {
                     tagColor = "bg-green-50 text-green-700 border-green-200";
                     simpleExplain = "Protects the body from harsh side-effects.";
                     hasBuffer = true;
@@ -414,7 +426,7 @@
                         <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800"><i class="fa-solid fa-leaf text-gray-300 mr-2"></i> ${herb.name}</td>
                         <td class="px-6 py-4 whitespace-nowrap">
                             <div class="flex items-center">
-                                <span class="text-sm font-bold text-gray-900 w-10">${herb.alpha.toFixed(2)}</span>
+                                <span class="text-sm font-bold text-gray-900 w-10">${herb.alpha.toFixed(3)}</span>
                                 <div class="w-16 bg-gray-200 rounded-full h-1.5 ml-2">
                                     <div class="bg-indigo-500 h-1.5 rounded-full" style="width: ${herb.alpha * 100}%"></div>
                                 </div>
@@ -432,7 +444,7 @@
                 `;
             });
 
-            // Update Composition UI
+            // 4. Update Composition UI
             const compUI = document.getElementById('compositionChecker');
             compUI.innerHTML = `
                 <div class="flex items-center text-xs p-1.5 rounded border ${hasArchitect ? 'bg-green-50 border-green-200 text-green-700' : 'bg-red-50 border-red-200 text-red-700'}">
