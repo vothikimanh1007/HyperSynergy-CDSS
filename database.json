@@ -1,0 +1,5000 @@
+{
+    "Ích Mẫu": {
+        "alpha": 0.45,
+        "tcmid": "1",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hương Phụ": {
+        "alpha": 0.485,
+        "tcmid": "2",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ngải Cứu": {
+        "alpha": 0.731,
+        "tcmid": "3",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bạch Đồng Nữ": {
+        "alpha": 0.506,
+        "tcmid": "4",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây Diếp Cá": {
+        "alpha": 0.577,
+        "tcmid": "5",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây Hồng Hoa": {
+        "alpha": 0.705,
+        "tcmid": "6",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây Gai": {
+        "alpha": 0.558,
+        "tcmid": "7",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây Hoa Cứt Lợn": {
+        "alpha": 0.695,
+        "tcmid": "8",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bán Hạ": {
+        "alpha": 0.369,
+        "tcmid": "9",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vỏ rễ cây Bông": {
+        "alpha": 0.58,
+        "tcmid": "10",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hạt Bông": {
+        "alpha": 0.612,
+        "tcmid": "11",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây Ngưu Tất": {
+        "alpha": 0.603,
+        "tcmid": "12",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây Tô Mộc": {
+        "alpha": 0.352,
+        "tcmid": "13",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây Rau Ngót": {
+        "alpha": 0.78,
+        "tcmid": "14",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đài Hái": {
+        "alpha": 0.472,
+        "tcmid": "15",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cỏ Đuôi Lươn": {
+        "alpha": 0.65,
+        "tcmid": "16",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đương Quy": {
+        "alpha": 0.601,
+        "tcmid": "17",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Huyết Giác": {
+        "alpha": 0.751,
+        "tcmid": "18",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mướp (Xơ mướp)": {
+        "alpha": 0.928,
+        "tcmid": "19",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Nhội": {
+        "alpha": 0.406,
+        "tcmid": "20",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ô Rô": {
+        "alpha": 0.503,
+        "tcmid": "21",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thiên Lý": {
+        "alpha": 0.628,
+        "tcmid": "22",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bạch Thược": {
+        "alpha": 0.434,
+        "tcmid": "23",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Xích Thược": {
+        "alpha": 0.717,
+        "tcmid": "24",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bọ Mẩy": {
+        "alpha": 0.727,
+        "tcmid": "25",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mít (Lá, Gỗ)": {
+        "alpha": 0.684,
+        "tcmid": "26",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cửu Lý Hương": {
+        "alpha": 0.635,
+        "tcmid": "27",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Duyên Hồ Sách": {
+        "alpha": 0.805,
+        "tcmid": "28",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Bồ công anh Việt Nam": {
+        "alpha": 0.427,
+        "tcmid": "29",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bồ công anh Trung Quốc": {
+        "alpha": 0.61,
+        "tcmid": "30",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Chỉ Thiên": {
+        "alpha": 0.489,
+        "tcmid": "31",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Kim Ngân": {
+        "alpha": 0.733,
+        "tcmid": "32",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây Ké Đầu Ngựa": {
+        "alpha": 0.325,
+        "tcmid": "33",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hạ Khô Thảo": {
+        "alpha": 0.596,
+        "tcmid": "34",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây Xà Sàng": {
+        "alpha": 0.65,
+        "tcmid": "35",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bưởi Bung": {
+        "alpha": 0.458,
+        "tcmid": "36",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây Mã Tiên Thảo": {
+        "alpha": 0.506,
+        "tcmid": "37",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Con Rết": {
+        "alpha": 0.602,
+        "tcmid": "38",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Sài Đất": {
+        "alpha": 0.743,
+        "tcmid": "39",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bạch Hạc": {
+        "alpha": 0.445,
+        "tcmid": "40",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bạch Hoa Xà": {
+        "alpha": 0.471,
+        "tcmid": "41",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bảy Lá Một Hoa": {
+        "alpha": 0.769,
+        "tcmid": "42",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bèo Cái": {
+        "alpha": 0.559,
+        "tcmid": "43",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bồ Cu Vẽ": {
+        "alpha": 0.483,
+        "tcmid": "44",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bùng Bục": {
+        "alpha": 0.709,
+        "tcmid": "45",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cà dại hoa vàng": {
+        "alpha": 0.527,
+        "tcmid": "46",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cào bản": {
+        "alpha": 0.754,
+        "tcmid": "47",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Chó đẻ răng cưa": {
+        "alpha": 0.5,
+        "tcmid": "48",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cúc liên chỉ dại": {
+        "alpha": 0.576,
+        "tcmid": "49",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dâm bụt": {
+        "alpha": 0.742,
+        "tcmid": "50",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ké hoa đào": {
+        "alpha": 0.566,
+        "tcmid": "51",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ké hoa vàng": {
+        "alpha": 0.713,
+        "tcmid": "52",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Khế": {
+        "alpha": 0.59,
+        "tcmid": "53",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Liên kiều": {
+        "alpha": 0.897,
+        "tcmid": "54",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Máu chó": {
+        "alpha": 0.835,
+        "tcmid": "55",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Lá móng tay": {
+        "alpha": 0.401,
+        "tcmid": "56",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mù u": {
+        "alpha": 0.678,
+        "tcmid": "57",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Niệt gió": {
+        "alpha": 0.478,
+        "tcmid": "58",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phù dung": {
+        "alpha": 0.629,
+        "tcmid": "59",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dầu rái trắng": {
+        "alpha": 0.61,
+        "tcmid": "60",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây rau má lá rau muống": {
+        "alpha": 0.442,
+        "tcmid": "61",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rau má ngọ": {
+        "alpha": 0.759,
+        "tcmid": "62",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tần cửu (thanh táo)": {
+        "alpha": 0.63,
+        "tcmid": "63",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thanh đại": {
+        "alpha": 0.557,
+        "tcmid": "64",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thuốc bỏng": {
+        "alpha": 0.534,
+        "tcmid": "65",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thuốc giấu": {
+        "alpha": 0.621,
+        "tcmid": "66",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Trầu không": {
+        "alpha": 0.661,
+        "tcmid": "67",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thơm lồm": {
+        "alpha": 0.581,
+        "tcmid": "68",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đơn buốt": {
+        "alpha": 0.3,
+        "tcmid": "69",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chè vằng": {
+        "alpha": 0.603,
+        "tcmid": "70",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây ráy": {
+        "alpha": 0.384,
+        "tcmid": "71",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ba chạc": {
+        "alpha": 0.569,
+        "tcmid": "72",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bạc thau": {
+        "alpha": 0.389,
+        "tcmid": "73",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bèo tây": {
+        "alpha": 0.388,
+        "tcmid": "74",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bứa": {
+        "alpha": 0.785,
+        "tcmid": "75",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dây đòn gánh": {
+        "alpha": 0.552,
+        "tcmid": "76",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đại phong tử": {
+        "alpha": 0.541,
+        "tcmid": "77",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đơn răng cưa": {
+        "alpha": 0.672,
+        "tcmid": "78",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đơn tướng quân": {
+        "alpha": 0.544,
+        "tcmid": "79",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Găng tu hú": {
+        "alpha": 0.916,
+        "tcmid": "80",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Huyết kiệt": {
+        "alpha": 0.559,
+        "tcmid": "81",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hương điệp": {
+        "alpha": 0.655,
+        "tcmid": "82",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Keo nước hoa": {
+        "alpha": 0.746,
+        "tcmid": "83",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Khoai nưa": {
+        "alpha": 0.84,
+        "tcmid": "84",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cây la": {
+        "alpha": 0.489,
+        "tcmid": "85",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cà tàu": {
+        "alpha": 0.537,
+        "tcmid": "86",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Lân tơ uyn": {
+        "alpha": 0.791,
+        "tcmid": "87",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Lu lu đực": {
+        "alpha": 0.722,
+        "tcmid": "88",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mật quỹ": {
+        "alpha": 0.761,
+        "tcmid": "89",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Muồng truồng": {
+        "alpha": 0.395,
+        "tcmid": "90",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rong mơ": {
+        "alpha": 0.832,
+        "tcmid": "91",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Sần thuyền": {
+        "alpha": 0.486,
+        "tcmid": "92",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thóc lép": {
+        "alpha": 0.629,
+        "tcmid": "93",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tỏi đỏ": {
+        "alpha": 0.578,
+        "tcmid": "94",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tùng hương": {
+        "alpha": 0.468,
+        "tcmid": "95",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vạn niên thanh": {
+        "alpha": 0.388,
+        "tcmid": "96",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Táo rừng": {
+        "alpha": 0.338,
+        "tcmid": "97",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sảng": {
+        "alpha": 0.618,
+        "tcmid": "98",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hàn the": {
+        "alpha": 0.371,
+        "tcmid": "99",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cà chua": {
+        "alpha": 0.43,
+        "tcmid": "100",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây dầu giun": {
+        "alpha": 0.567,
+        "tcmid": "101",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sử quân tử": {
+        "alpha": 0.3,
+        "tcmid": "102",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây keo dậu": {
+        "alpha": 0.717,
+        "tcmid": "103",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây bách bộ": {
+        "alpha": 0.3,
+        "tcmid": "104",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Xoan": {
+        "alpha": 0.588,
+        "tcmid": "105",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây thùn mũn": {
+        "alpha": 0.602,
+        "tcmid": "106",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hạt bí ngô": {
+        "alpha": 0.681,
+        "tcmid": "107",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây chân bầu": {
+        "alpha": 0.594,
+        "tcmid": "108",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây thạch lựu": {
+        "alpha": 0.903,
+        "tcmid": "109",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cây cau (Hạt)": {
+        "alpha": 0.632,
+        "tcmid": "110",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây rùm nao": {
+        "alpha": 0.758,
+        "tcmid": "111",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Quán chúng": {
+        "alpha": 0.491,
+        "tcmid": "112",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mặc nưa": {
+        "alpha": 0.618,
+        "tcmid": "113",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây sầu đâu rừng": {
+        "alpha": 0.832,
+        "tcmid": "114",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Tỏi": {
+        "alpha": 0.564,
+        "tcmid": "115",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mộc hoa trắng": {
+        "alpha": 0.629,
+        "tcmid": "116",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Rau sam": {
+        "alpha": 0.747,
+        "tcmid": "117",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mơ tam thể": {
+        "alpha": 0.489,
+        "tcmid": "118",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây chè (Lá)": {
+        "alpha": 0.3,
+        "tcmid": "119",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vỏ lựu": {
+        "alpha": 0.638,
+        "tcmid": "120",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hoàng liên": {
+        "alpha": 0.748,
+        "tcmid": "121",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hoàng liên gai": {
+        "alpha": 0.397,
+        "tcmid": "122",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hoàng liên ô rô": {
+        "alpha": 0.701,
+        "tcmid": "123",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hoàng đằng": {
+        "alpha": 0.702,
+        "tcmid": "124",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hoàng đằng chân vịt": {
+        "alpha": 0.3,
+        "tcmid": "125",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vàng đằng": {
+        "alpha": 0.46,
+        "tcmid": "126",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thổ hoàng liên": {
+        "alpha": 0.541,
+        "tcmid": "127",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hoàng đằng loong trơn": {
+        "alpha": 0.573,
+        "tcmid": "128",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hoàng bá": {
+        "alpha": 0.489,
+        "tcmid": "129",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cỏ sữa nhỏ lá": {
+        "alpha": 0.48,
+        "tcmid": "130",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ba chẽ": {
+        "alpha": 0.851,
+        "tcmid": "131",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Bàng (Lá và búp non)": {
+        "alpha": 0.584,
+        "tcmid": "132",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cẩm xà lặc": {
+        "alpha": 0.496,
+        "tcmid": "133",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Điều nhuộm": {
+        "alpha": 0.594,
+        "tcmid": "134",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đơn đỏ": {
+        "alpha": 0.681,
+        "tcmid": "135",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đơn trăng (Hé mọ)": {
+        "alpha": 0.608,
+        "tcmid": "136",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mộc nhĩ": {
+        "alpha": 0.569,
+        "tcmid": "137",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phượng nhỡn thảo": {
+        "alpha": 0.502,
+        "tcmid": "138",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "San sư cô": {
+        "alpha": 0.501,
+        "tcmid": "139",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Seo gà": {
+        "alpha": 0.51,
+        "tcmid": "140",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vọng cách": {
+        "alpha": 0.651,
+        "tcmid": "141",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đậu rựa": {
+        "alpha": 0.451,
+        "tcmid": "142",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Gừng dại": {
+        "alpha": 0.659,
+        "tcmid": "143",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Săng lẻ": {
+        "alpha": 0.812,
+        "tcmid": "144",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Mã đề": {
+        "alpha": 0.649,
+        "tcmid": "145",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây trạch tả": {
+        "alpha": 0.545,
+        "tcmid": "146",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đại phúc bì": {
+        "alpha": 0.405,
+        "tcmid": "147",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cỏ chỉ": {
+        "alpha": 0.837,
+        "tcmid": "148",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cỏ tranh (Thân rễ)": {
+        "alpha": 0.424,
+        "tcmid": "149",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây râu mèo": {
+        "alpha": 0.727,
+        "tcmid": "150",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Râu ngô": {
+        "alpha": 0.696,
+        "tcmid": "151",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây áctisô": {
+        "alpha": 0.564,
+        "tcmid": "152",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phục linh": {
+        "alpha": 0.561,
+        "tcmid": "153",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bấc đèn": {
+        "alpha": 0.325,
+        "tcmid": "154",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây thông thảo": {
+        "alpha": 0.65,
+        "tcmid": "155",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dành dành": {
+        "alpha": 0.693,
+        "tcmid": "156",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Nghệ": {
+        "alpha": 0.437,
+        "tcmid": "157",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mật động vật - Đởm": {
+        "alpha": 0.577,
+        "tcmid": "158",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mật lợn": {
+        "alpha": 0.606,
+        "tcmid": "159",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mật bò": {
+        "alpha": 0.688,
+        "tcmid": "160",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bòn bọt": {
+        "alpha": 0.601,
+        "tcmid": "161",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dưa chuột": {
+        "alpha": 0.356,
+        "tcmid": "163",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chua me đất hoa vàng": {
+        "alpha": 0.521,
+        "tcmid": "164",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây chua me lá me": {
+        "alpha": 0.634,
+        "tcmid": "165",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cỏ bợ": {
+        "alpha": 0.726,
+        "tcmid": "166",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cỏ may": {
+        "alpha": 0.507,
+        "tcmid": "167",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đậu đen": {
+        "alpha": 0.928,
+        "tcmid": "168",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Hoa hiên": {
+        "alpha": 0.316,
+        "tcmid": "169",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Lõi tiền": {
+        "alpha": 0.515,
+        "tcmid": "170",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mộc tặc": {
+        "alpha": 0.588,
+        "tcmid": "171",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mộc thông": {
+        "alpha": 0.57,
+        "tcmid": "172",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sòi": {
+        "alpha": 0.415,
+        "tcmid": "173",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tai chuột": {
+        "alpha": 0.667,
+        "tcmid": "174",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thạch vĩ": {
+        "alpha": 0.656,
+        "tcmid": "175",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Lưỡi rắn": {
+        "alpha": 0.607,
+        "tcmid": "176",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dây chặc chìu": {
+        "alpha": 0.65,
+        "tcmid": "177",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thòng bong": {
+        "alpha": 0.536,
+        "tcmid": "178",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mần tưới": {
+        "alpha": 0.357,
+        "tcmid": "179",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cà dái dê tím": {
+        "alpha": 0.493,
+        "tcmid": "180",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây cam xũng": {
+        "alpha": 0.624,
+        "tcmid": "181",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Chanh trường": {
+        "alpha": 0.624,
+        "tcmid": "182",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Coi": {
+        "alpha": 0.606,
+        "tcmid": "183",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Côn bố": {
+        "alpha": 0.682,
+        "tcmid": "184",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây cơm cháy": {
+        "alpha": 0.513,
+        "tcmid": "185",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rau dừa nước": {
+        "alpha": 0.604,
+        "tcmid": "186",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dứa": {
+        "alpha": 0.686,
+        "tcmid": "187",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dứa dại": {
+        "alpha": 0.587,
+        "tcmid": "188",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây đa": {
+        "alpha": 0.414,
+        "tcmid": "189",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đậu chiều": {
+        "alpha": 0.456,
+        "tcmid": "190",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đậu đỏ nhỏ": {
+        "alpha": 0.725,
+        "tcmid": "191",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Găng": {
+        "alpha": 0.809,
+        "tcmid": "192",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cây xương sáo": {
+        "alpha": 0.776,
+        "tcmid": "193",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thốt nốt": {
+        "alpha": 0.635,
+        "tcmid": "194",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mía": {
+        "alpha": 0.42,
+        "tcmid": "195",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Kim tiền thảo": {
+        "alpha": 0.599,
+        "tcmid": "196",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rau om": {
+        "alpha": 0.834,
+        "tcmid": "197",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Móng lưng rồng": {
+        "alpha": 0.693,
+        "tcmid": "198",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Nàng nàng": {
+        "alpha": 0.569,
+        "tcmid": "199",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rau đắng": {
+        "alpha": 0.694,
+        "tcmid": "200",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây lá tiết dê": {
+        "alpha": 0.41,
+        "tcmid": "201",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Khế rừng": {
+        "alpha": 0.496,
+        "tcmid": "202",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mã thầy": {
+        "alpha": 0.437,
+        "tcmid": "203",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mùi tây": {
+        "alpha": 0.67,
+        "tcmid": "204",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thương lục": {
+        "alpha": 0.707,
+        "tcmid": "205",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cỏ thiên thảo": {
+        "alpha": 0.577,
+        "tcmid": "206",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dứa bà": {
+        "alpha": 0.469,
+        "tcmid": "207",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Lục lạc ba lá tròn": {
+        "alpha": 0.597,
+        "tcmid": "208",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rau muống": {
+        "alpha": 0.527,
+        "tcmid": "209",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cỏ nhọ nồi": {
+        "alpha": 0.481,
+        "tcmid": "210",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây nghể": {
+        "alpha": 0.651,
+        "tcmid": "211",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cỏ nến (Phấn hoa)": {
+        "alpha": 0.486,
+        "tcmid": "212",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Long nha thảo": {
+        "alpha": 0.365,
+        "tcmid": "213",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây huyết dụ": {
+        "alpha": 0.398,
+        "tcmid": "214",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây trắc bách diệp": {
+        "alpha": 0.36,
+        "tcmid": "215",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây tam thất": {
+        "alpha": 0.637,
+        "tcmid": "216",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây mào gà trắng": {
+        "alpha": 0.623,
+        "tcmid": "217",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây mào gà đỏ": {
+        "alpha": 0.615,
+        "tcmid": "218",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bách thảo sương": {
+        "alpha": 0.688,
+        "tcmid": "219",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Rau ngổ": {
+        "alpha": 0.779,
+        "tcmid": "220",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thiến thảo": {
+        "alpha": 0.511,
+        "tcmid": "221",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vạn tuế": {
+        "alpha": 0.661,
+        "tcmid": "222",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Địa du": {
+        "alpha": 0.363,
+        "tcmid": "223",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây hoa hòe": {
+        "alpha": 0.807,
+        "tcmid": "224",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Mạch ba góc": {
+        "alpha": 0.413,
+        "tcmid": "225",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây ba gạc": {
+        "alpha": 0.493,
+        "tcmid": "226",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây ba gạc Ấn Độ": {
+        "alpha": 0.51,
+        "tcmid": "227",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây ba kích": {
+        "alpha": 0.371,
+        "tcmid": "228",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây câu đằng": {
+        "alpha": 0.605,
+        "tcmid": "229",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây nhàu": {
+        "alpha": 0.632,
+        "tcmid": "230",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây dừa cạn": {
+        "alpha": 0.572,
+        "tcmid": "231",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đỗ trọng": {
+        "alpha": 0.369,
+        "tcmid": "232",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hoàng cầm": {
+        "alpha": 0.898,
+        "tcmid": "233",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Hồi đầu thảo": {
+        "alpha": 0.682,
+        "tcmid": "234",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Rau cần tây": {
+        "alpha": 0.95,
+        "tcmid": "235",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cây chẹo": {
+        "alpha": 0.479,
+        "tcmid": "236",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây củ đậu (Hạt)": {
+        "alpha": 0.744,
+        "tcmid": "237",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây hột mát": {
+        "alpha": 0.717,
+        "tcmid": "238",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây lá ngón": {
+        "alpha": 0.556,
+        "tcmid": "239",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây sui": {
+        "alpha": 0.812,
+        "tcmid": "240",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Thân mát": {
+        "alpha": 0.539,
+        "tcmid": "241",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hồi núi": {
+        "alpha": 0.546,
+        "tcmid": "242",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hương bài": {
+        "alpha": 0.3,
+        "tcmid": "243",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hương lâu": {
+        "alpha": 0.661,
+        "tcmid": "244",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cổ giải": {
+        "alpha": 0.401,
+        "tcmid": "245",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cúc trừ sâu": {
+        "alpha": 0.517,
+        "tcmid": "246",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tỏi độc": {
+        "alpha": 0.446,
+        "tcmid": "247",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây ngọt nghẹo": {
+        "alpha": 0.545,
+        "tcmid": "248",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây cho curaro": {
+        "alpha": 0.667,
+        "tcmid": "249",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Sở": {
+        "alpha": 0.602,
+        "tcmid": "250",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Trẩu": {
+        "alpha": 0.706,
+        "tcmid": "251",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây lim": {
+        "alpha": 0.79,
+        "tcmid": "252",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mắc kẹn": {
+        "alpha": 0.545,
+        "tcmid": "253",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thuốc lá": {
+        "alpha": 0.528,
+        "tcmid": "254",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Gai dâu": {
+        "alpha": 0.744,
+        "tcmid": "255",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây sơn": {
+        "alpha": 0.756,
+        "tcmid": "256",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dây thuốc cá": {
+        "alpha": 0.711,
+        "tcmid": "257",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Sơn tra": {
+        "alpha": 0.457,
+        "tcmid": "258",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mạch nha": {
+        "alpha": 0.663,
+        "tcmid": "259",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thần khúc": {
+        "alpha": 0.616,
+        "tcmid": "260",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đu đủ": {
+        "alpha": 0.758,
+        "tcmid": "261",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Kê nội kim": {
+        "alpha": 0.514,
+        "tcmid": "262",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chỉ thực": {
+        "alpha": 0.35,
+        "tcmid": "263",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Địa liền": {
+        "alpha": 0.704,
+        "tcmid": "264",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Gừng": {
+        "alpha": 0.3,
+        "tcmid": "265",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Gừng gió": {
+        "alpha": 0.49,
+        "tcmid": "266",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hạt sen": {
+        "alpha": 0.447,
+        "tcmid": "267",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hạt tiêu": {
+        "alpha": 0.446,
+        "tcmid": "268",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hậu phác": {
+        "alpha": 0.488,
+        "tcmid": "269",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hoắc hương": {
+        "alpha": 0.783,
+        "tcmid": "270",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Long đờm thảo": {
+        "alpha": 0.723,
+        "tcmid": "271",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Nga truật": {
+        "alpha": 0.562,
+        "tcmid": "272",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ngô thù du": {
+        "alpha": 0.77,
+        "tcmid": "273",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ngũ gia bì": {
+        "alpha": 0.441,
+        "tcmid": "274",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ớt": {
+        "alpha": 0.42,
+        "tcmid": "275",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Quít - Trần bì": {
+        "alpha": 0.73,
+        "tcmid": "276",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Riềng": {
+        "alpha": 0.687,
+        "tcmid": "277",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Xương bồ": {
+        "alpha": 0.531,
+        "tcmid": "278",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bạch biển đậu": {
+        "alpha": 0.43,
+        "tcmid": "279",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bạch truật": {
+        "alpha": 0.819,
+        "tcmid": "280",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Thương truật": {
+        "alpha": 0.342,
+        "tcmid": "281",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đơn lá đỏ": {
+        "alpha": 0.51,
+        "tcmid": "282",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đùm đùm": {
+        "alpha": 0.634,
+        "tcmid": "283",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mâm xôi": {
+        "alpha": 0.87,
+        "tcmid": "284",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Mộc hương": {
+        "alpha": 0.657,
+        "tcmid": "285",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Rau đay": {
+        "alpha": 0.672,
+        "tcmid": "286",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dương xuân sa": {
+        "alpha": 0.515,
+        "tcmid": "287",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sa nhân": {
+        "alpha": 0.685,
+        "tcmid": "288",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đậu khấu": {
+        "alpha": 0.616,
+        "tcmid": "289",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thảo đậu khấu": {
+        "alpha": 0.362,
+        "tcmid": "290",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hồng đậu khấu": {
+        "alpha": 0.719,
+        "tcmid": "291",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ích trí nhân": {
+        "alpha": 0.746,
+        "tcmid": "292",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Nhục đậu khấu": {
+        "alpha": 0.721,
+        "tcmid": "293",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thành ngạnh": {
+        "alpha": 0.605,
+        "tcmid": "294",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thảo quả": {
+        "alpha": 0.457,
+        "tcmid": "295",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thị (Tai quả)": {
+        "alpha": 0.3,
+        "tcmid": "296",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bách bệnh": {
+        "alpha": 0.624,
+        "tcmid": "297",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hublông": {
+        "alpha": 0.762,
+        "tcmid": "298",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây dung": {
+        "alpha": 0.749,
+        "tcmid": "299",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hoa tiên": {
+        "alpha": 0.722,
+        "tcmid": "300",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Màng tang": {
+        "alpha": 0.589,
+        "tcmid": "301",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rau mùi": {
+        "alpha": 0.763,
+        "tcmid": "302",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Nấm hương": {
+        "alpha": 0.739,
+        "tcmid": "303",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thiên đầu thống": {
+        "alpha": 0.537,
+        "tcmid": "304",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tai chua": {
+        "alpha": 0.701,
+        "tcmid": "305",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thìa là": {
+        "alpha": 0.52,
+        "tcmid": "306",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vôi": {
+        "alpha": 0.681,
+        "tcmid": "307",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây lá men": {
+        "alpha": 0.405,
+        "tcmid": "308",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sổ": {
+        "alpha": 0.417,
+        "tcmid": "309",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thanh ngâm": {
+        "alpha": 0.759,
+        "tcmid": "310",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Kha tử": {
+        "alpha": 0.741,
+        "tcmid": "311",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Măng cụt (Vỏ quả)": {
+        "alpha": 0.695,
+        "tcmid": "312",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ngũ bội tử": {
+        "alpha": 0.613,
+        "tcmid": "313",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây ổi": {
+        "alpha": 0.3,
+        "tcmid": "314",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ô dược": {
+        "alpha": 0.589,
+        "tcmid": "315",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sim": {
+        "alpha": 0.668,
+        "tcmid": "316",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Trầm hương": {
+        "alpha": 0.52,
+        "tcmid": "317",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Kiến kỳ nam": {
+        "alpha": 0.493,
+        "tcmid": "318",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cà rốt": {
+        "alpha": 0.817,
+        "tcmid": "319",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Preah phneou": {
+        "alpha": 0.591,
+        "tcmid": "320",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Củ nâu": {
+        "alpha": 0.668,
+        "tcmid": "321",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Vải (Hạt)": {
+        "alpha": 0.716,
+        "tcmid": "322",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Khoai riềng": {
+        "alpha": 0.45,
+        "tcmid": "323",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Khiên ngưu": {
+        "alpha": 0.629,
+        "tcmid": "324",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Khoai lang": {
+        "alpha": 0.798,
+        "tcmid": "325",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây đại (Vỏ)": {
+        "alpha": 0.873,
+        "tcmid": "326",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Mang tiêu": {
+        "alpha": 0.606,
+        "tcmid": "327",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ba đậu": {
+        "alpha": 0.564,
+        "tcmid": "328",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thầu dầu (Dầu hạt)": {
+        "alpha": 0.64,
+        "tcmid": "329",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Chút chít": {
+        "alpha": 0.637,
+        "tcmid": "330",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đại hoàng": {
+        "alpha": 0.808,
+        "tcmid": "331",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Lô hội": {
+        "alpha": 0.451,
+        "tcmid": "332",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Muồng trâu": {
+        "alpha": 0.558,
+        "tcmid": "333",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phan tả diệp": {
+        "alpha": 0.432,
+        "tcmid": "334",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thảo quyết minh": {
+        "alpha": 0.448,
+        "tcmid": "335",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vọng giang nam": {
+        "alpha": 0.656,
+        "tcmid": "336",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Rau mồng tơi": {
+        "alpha": 0.721,
+        "tcmid": "337",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thạch": {
+        "alpha": 0.503,
+        "tcmid": "338",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây hoa phấn": {
+        "alpha": 0.716,
+        "tcmid": "339",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ba đậu tây": {
+        "alpha": 0.767,
+        "tcmid": "340",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đằng hoàng": {
+        "alpha": 0.89,
+        "tcmid": "341",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Đậu cọc rào": {
+        "alpha": 0.61,
+        "tcmid": "342",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây lai": {
+        "alpha": 0.504,
+        "tcmid": "343",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Lộc mai": {
+        "alpha": 0.45,
+        "tcmid": "344",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Me": {
+        "alpha": 0.435,
+        "tcmid": "345",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Lạc (Dầu)": {
+        "alpha": 0.787,
+        "tcmid": "346",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tục tùy tử": {
+        "alpha": 0.373,
+        "tcmid": "347",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thanh long": {
+        "alpha": 0.783,
+        "tcmid": "348",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây khôi": {
+        "alpha": 0.47,
+        "tcmid": "349",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây dạ cẩm": {
+        "alpha": 0.497,
+        "tcmid": "350",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mẫu lệ": {
+        "alpha": 0.577,
+        "tcmid": "351",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mai mực": {
+        "alpha": 0.494,
+        "tcmid": "352",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thạch quyết minh": {
+        "alpha": 0.74,
+        "tcmid": "353",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cải bắp": {
+        "alpha": 0.872,
+        "tcmid": "354",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cẩu tích": {
+        "alpha": 0.501,
+        "tcmid": "355",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cốt toái bổ": {
+        "alpha": 0.535,
+        "tcmid": "356",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dây đau xương": {
+        "alpha": 0.576,
+        "tcmid": "357",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây hàm ếch": {
+        "alpha": 0.681,
+        "tcmid": "358",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hy thiêm": {
+        "alpha": 0.577,
+        "tcmid": "359",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây sung": {
+        "alpha": 0.808,
+        "tcmid": "360",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Thiên niên kiện": {
+        "alpha": 0.772,
+        "tcmid": "361",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thổ phục linh": {
+        "alpha": 0.422,
+        "tcmid": "362",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây xá xị": {
+        "alpha": 0.678,
+        "tcmid": "363",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tỳ giải": {
+        "alpha": 0.828,
+        "tcmid": "364",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cây vòi voi": {
+        "alpha": 0.526,
+        "tcmid": "365",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mật gấu": {
+        "alpha": 0.556,
+        "tcmid": "366",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chìa vôi": {
+        "alpha": 0.521,
+        "tcmid": "367",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Củ cốt khí": {
+        "alpha": 0.524,
+        "tcmid": "368",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Độc hoạt": {
+        "alpha": 0.35,
+        "tcmid": "369",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Náng hoa trắng": {
+        "alpha": 0.401,
+        "tcmid": "370",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Trinh nữ hoàng cung": {
+        "alpha": 0.612,
+        "tcmid": "371",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Phòng kỷ": {
+        "alpha": 0.827,
+        "tcmid": "372",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Phấn phòng kỷ": {
+        "alpha": 0.508,
+        "tcmid": "373",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Quảng phòng kỷ": {
+        "alpha": 0.504,
+        "tcmid": "374",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mộc phòng kỷ": {
+        "alpha": 0.855,
+        "tcmid": "375",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Tấm duột": {
+        "alpha": 0.434,
+        "tcmid": "376",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Lá lốt": {
+        "alpha": 0.351,
+        "tcmid": "377",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Lấu": {
+        "alpha": 0.476,
+        "tcmid": "378",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Trứng cuốc": {
+        "alpha": 0.501,
+        "tcmid": "379",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Châu thụ": {
+        "alpha": 0.338,
+        "tcmid": "380",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dây toàn": {
+        "alpha": 0.581,
+        "tcmid": "381",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây đền": {
+        "alpha": 0.742,
+        "tcmid": "382",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Gối hạc": {
+        "alpha": 0.407,
+        "tcmid": "383",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hoàng nàn": {
+        "alpha": 0.613,
+        "tcmid": "384",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hồi": {
+        "alpha": 0.659,
+        "tcmid": "385",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Khoai tây": {
+        "alpha": 0.587,
+        "tcmid": "386",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Kim sương": {
+        "alpha": 0.628,
+        "tcmid": "387",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Long não": {
+        "alpha": 0.63,
+        "tcmid": "388",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mã tiền": {
+        "alpha": 0.478,
+        "tcmid": "389",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mộc qua": {
+        "alpha": 0.825,
+        "tcmid": "390",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Vuốt hùm": {
+        "alpha": 0.787,
+        "tcmid": "391",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bướm bạc": {
+        "alpha": 0.778,
+        "tcmid": "392",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Chay": {
+        "alpha": 0.752,
+        "tcmid": "393",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Rung rúc": {
+        "alpha": 0.364,
+        "tcmid": "394",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Giổi": {
+        "alpha": 0.739,
+        "tcmid": "395",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Chìa vôi (loại 2)": {
+        "alpha": 0.698,
+        "tcmid": "396",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây ban": {
+        "alpha": 0.37,
+        "tcmid": "397",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bời lời nhớt": {
+        "alpha": 0.568,
+        "tcmid": "398",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bông báo": {
+        "alpha": 0.642,
+        "tcmid": "399",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây mỏ quạ": {
+        "alpha": 0.85,
+        "tcmid": "400",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cà dại hoa trắng": {
+        "alpha": 0.709,
+        "tcmid": "401",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bông ổi": {
+        "alpha": 0.47,
+        "tcmid": "402",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tơ mành": {
+        "alpha": 0.854,
+        "tcmid": "403",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Bát giác liên": {
+        "alpha": 0.607,
+        "tcmid": "404",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bông gạo": {
+        "alpha": 0.562,
+        "tcmid": "405",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cà gai leo": {
+        "alpha": 0.551,
+        "tcmid": "406",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rau răm": {
+        "alpha": 0.356,
+        "tcmid": "407",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vòng vang": {
+        "alpha": 0.584,
+        "tcmid": "408",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Lá dong": {
+        "alpha": 0.675,
+        "tcmid": "409",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Sơn từ cô": {
+        "alpha": 0.542,
+        "tcmid": "410",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phèn đen": {
+        "alpha": 0.663,
+        "tcmid": "411",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ngò đồng": {
+        "alpha": 0.47,
+        "tcmid": "412",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cỏ bạc đầu": {
+        "alpha": 0.579,
+        "tcmid": "413",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đào lộn hột": {
+        "alpha": 0.647,
+        "tcmid": "414",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Xoan nhừ": {
+        "alpha": 0.628,
+        "tcmid": "415",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bóng nước": {
+        "alpha": 0.359,
+        "tcmid": "416",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây mắm": {
+        "alpha": 0.534,
+        "tcmid": "417",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rau tàu bay": {
+        "alpha": 0.852,
+        "tcmid": "418",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cây kim vàng": {
+        "alpha": 0.526,
+        "tcmid": "419",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cốc tinh thảo": {
+        "alpha": 0.602,
+        "tcmid": "420",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mật mông hoa": {
+        "alpha": 0.587,
+        "tcmid": "421",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cúc áo": {
+        "alpha": 0.835,
+        "tcmid": "422",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Xương khô": {
+        "alpha": 0.794,
+        "tcmid": "423",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Xương rồng": {
+        "alpha": 0.721,
+        "tcmid": "424",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tế tân": {
+        "alpha": 0.454,
+        "tcmid": "425",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đơn chân chấu": {
+        "alpha": 0.654,
+        "tcmid": "426",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mía dò": {
+        "alpha": 0.685,
+        "tcmid": "427",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Xoài": {
+        "alpha": 0.495,
+        "tcmid": "428",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Nhãn hương": {
+        "alpha": 0.469,
+        "tcmid": "429",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tật lê": {
+        "alpha": 0.856,
+        "tcmid": "430",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Ruồi": {
+        "alpha": 0.555,
+        "tcmid": "431",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Củ gió": {
+        "alpha": 0.842,
+        "tcmid": "432",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Sao đen": {
+        "alpha": 0.75,
+        "tcmid": "433",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tất bạt": {
+        "alpha": 0.661,
+        "tcmid": "434",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây mướp sát": {
+        "alpha": 0.668,
+        "tcmid": "435",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây sừng dê": {
+        "alpha": 0.39,
+        "tcmid": "436",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây thông thiên": {
+        "alpha": 0.631,
+        "tcmid": "437",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây trúc đào": {
+        "alpha": 0.813,
+        "tcmid": "438",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Hành biển": {
+        "alpha": 0.702,
+        "tcmid": "440",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bạc hà": {
+        "alpha": 0.623,
+        "tcmid": "441",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bạch chỉ": {
+        "alpha": 0.857,
+        "tcmid": "442",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cây cối xay": {
+        "alpha": 0.572,
+        "tcmid": "443",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây cúc bách nhật": {
+        "alpha": 0.507,
+        "tcmid": "444",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cúc hoa": {
+        "alpha": 0.623,
+        "tcmid": "445",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đại bi": {
+        "alpha": 0.715,
+        "tcmid": "446",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đạm trúc diệp": {
+        "alpha": 0.342,
+        "tcmid": "447",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hành": {
+        "alpha": 0.643,
+        "tcmid": "448",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Kinh giới": {
+        "alpha": 0.722,
+        "tcmid": "449",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dây ký ninh": {
+        "alpha": 0.56,
+        "tcmid": "450",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ma hoàng": {
+        "alpha": 0.766,
+        "tcmid": "451",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Màn kinh tử": {
+        "alpha": 0.696,
+        "tcmid": "452",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cỏ mần trầu": {
+        "alpha": 0.921,
+        "tcmid": "453",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Mẫu đơn bì": {
+        "alpha": 0.487,
+        "tcmid": "454",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Muống biển": {
+        "alpha": 0.725,
+        "tcmid": "455",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Na": {
+        "alpha": 0.447,
+        "tcmid": "456",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ngưu bàng (Quả)": {
+        "alpha": 0.358,
+        "tcmid": "457",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Nhân trần": {
+        "alpha": 0.3,
+        "tcmid": "458",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Qua lâu nhân": {
+        "alpha": 0.681,
+        "tcmid": "459",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây rau má": {
+        "alpha": 0.628,
+        "tcmid": "460",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Sài hồ": {
+        "alpha": 0.528,
+        "tcmid": "461",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sắn dây": {
+        "alpha": 0.334,
+        "tcmid": "462",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tề thái": {
+        "alpha": 0.496,
+        "tcmid": "463",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thạch hộc": {
+        "alpha": 0.601,
+        "tcmid": "464",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thanh cao hoa vàng": {
+        "alpha": 0.719,
+        "tcmid": "465",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thanh cao": {
+        "alpha": 0.598,
+        "tcmid": "466",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây chổi xuể": {
+        "alpha": 0.638,
+        "tcmid": "467",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thường sơn": {
+        "alpha": 0.544,
+        "tcmid": "468",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tía tô": {
+        "alpha": 0.862,
+        "tcmid": "469",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Tiền hồ": {
+        "alpha": 0.447,
+        "tcmid": "470",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Trúc nhự": {
+        "alpha": 0.495,
+        "tcmid": "471",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Xạ can": {
+        "alpha": 0.526,
+        "tcmid": "472",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Xuyên khung": {
+        "alpha": 0.681,
+        "tcmid": "473",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bầu đất": {
+        "alpha": 0.444,
+        "tcmid": "474",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dướng": {
+        "alpha": 0.62,
+        "tcmid": "475",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Húng quế": {
+        "alpha": 0.625,
+        "tcmid": "476",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Trà tiên": {
+        "alpha": 0.496,
+        "tcmid": "477",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Gắm": {
+        "alpha": 0.649,
+        "tcmid": "478",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hương nhu": {
+        "alpha": 0.449,
+        "tcmid": "479",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Khương hoạt": {
+        "alpha": 0.432,
+        "tcmid": "480",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Niễng": {
+        "alpha": 0.615,
+        "tcmid": "481",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Phòng phong": {
+        "alpha": 0.351,
+        "tcmid": "482",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dây quai bị": {
+        "alpha": 0.3,
+        "tcmid": "483",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thăng ma": {
+        "alpha": 0.68,
+        "tcmid": "484",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Canh châu": {
+        "alpha": 0.757,
+        "tcmid": "485",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cánh kiến đỏ": {
+        "alpha": 0.53,
+        "tcmid": "486",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đinh hương": {
+        "alpha": 0.5,
+        "tcmid": "487",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ngâu": {
+        "alpha": 0.751,
+        "tcmid": "488",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bàm bàm": {
+        "alpha": 0.428,
+        "tcmid": "489",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bụng báng": {
+        "alpha": 0.395,
+        "tcmid": "490",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Canh ki na": {
+        "alpha": 0.706,
+        "tcmid": "491",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Củ khỉ": {
+        "alpha": 0.601,
+        "tcmid": "492",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cúc mốc": {
+        "alpha": 0.76,
+        "tcmid": "493",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cúc tần": {
+        "alpha": 0.3,
+        "tcmid": "494",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đậu sị": {
+        "alpha": 0.39,
+        "tcmid": "495",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rau mùi tàu": {
+        "alpha": 0.602,
+        "tcmid": "496",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Sả": {
+        "alpha": 0.663,
+        "tcmid": "497",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Xương sông": {
+        "alpha": 0.727,
+        "tcmid": "498",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bỏng nổ": {
+        "alpha": 0.626,
+        "tcmid": "499",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bưởi (Lá)": {
+        "alpha": 0.625,
+        "tcmid": "500",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Củ ấu": {
+        "alpha": 0.542,
+        "tcmid": "501",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "So đũa": {
+        "alpha": 0.839,
+        "tcmid": "502",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cây gáo": {
+        "alpha": 0.435,
+        "tcmid": "503",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây me rừng": {
+        "alpha": 0.654,
+        "tcmid": "504",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Móc mèo núi": {
+        "alpha": 0.452,
+        "tcmid": "505",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây cổ bình": {
+        "alpha": 0.68,
+        "tcmid": "506",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tía tô dại": {
+        "alpha": 0.444,
+        "tcmid": "507",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây thuốc phiện": {
+        "alpha": 0.712,
+        "tcmid": "508",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây cà độc dược": {
+        "alpha": 0.617,
+        "tcmid": "509",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thiên tiên tử": {
+        "alpha": 0.862,
+        "tcmid": "510",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Ma (Cần sa)": {
+        "alpha": 0.558,
+        "tcmid": "511",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đào (Hạt)": {
+        "alpha": 0.664,
+        "tcmid": "512",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cỏ trói gà": {
+        "alpha": 0.483,
+        "tcmid": "513",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Húng chanh": {
+        "alpha": 0.557,
+        "tcmid": "514",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ráng trắc": {
+        "alpha": 0.616,
+        "tcmid": "515",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cải canh (Hạt)": {
+        "alpha": 0.371,
+        "tcmid": "516",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Củ cải (Hạt)": {
+        "alpha": 0.387,
+        "tcmid": "517",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thiên môn đông": {
+        "alpha": 0.69,
+        "tcmid": "518",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mạch môn đông": {
+        "alpha": 0.578,
+        "tcmid": "519",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cát cánh": {
+        "alpha": 0.511,
+        "tcmid": "520",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây nhót tây (Lá)": {
+        "alpha": 0.489,
+        "tcmid": "521",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây bồng bồng": {
+        "alpha": 0.495,
+        "tcmid": "522",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bách hợp": {
+        "alpha": 0.617,
+        "tcmid": "523",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây dâu (Vỏ rễ)": {
+        "alpha": 0.667,
+        "tcmid": "524",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây bọ mắm": {
+        "alpha": 0.3,
+        "tcmid": "525",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hẹ": {
+        "alpha": 0.812,
+        "tcmid": "526",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Núc nác": {
+        "alpha": 0.801,
+        "tcmid": "527",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Tô hạp hương": {
+        "alpha": 0.3,
+        "tcmid": "528",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cánh kiến trắng": {
+        "alpha": 0.763,
+        "tcmid": "529",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Viễn chí": {
+        "alpha": 0.758,
+        "tcmid": "530",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bồ kết (Quả)": {
+        "alpha": 0.6,
+        "tcmid": "531",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mướp đắng": {
+        "alpha": 0.405,
+        "tcmid": "532",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Trám": {
+        "alpha": 0.752,
+        "tcmid": "533",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thị đế": {
+        "alpha": 0.564,
+        "tcmid": "534",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tử uyển": {
+        "alpha": 0.682,
+        "tcmid": "535",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tràm (Lá và tinh dầu)": {
+        "alpha": 0.933,
+        "tcmid": "536",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Bạch đàn (Lá và tinh dầu)": {
+        "alpha": 0.638,
+        "tcmid": "537",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây một lá": {
+        "alpha": 0.462,
+        "tcmid": "538",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hồng bì": {
+        "alpha": 0.55,
+        "tcmid": "539",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cóc mẳn": {
+        "alpha": 0.482,
+        "tcmid": "540",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phật thủ": {
+        "alpha": 0.665,
+        "tcmid": "541",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Gai tầm xoọng": {
+        "alpha": 0.479,
+        "tcmid": "542",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bạch cập": {
+        "alpha": 0.529,
+        "tcmid": "543",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Biến hóa": {
+        "alpha": 0.407,
+        "tcmid": "544",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bồ hòn": {
+        "alpha": 0.58,
+        "tcmid": "545",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bối mẫu": {
+        "alpha": 0.627,
+        "tcmid": "546",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cà dại hoa tím": {
+        "alpha": 0.3,
+        "tcmid": "547",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cải cúc": {
+        "alpha": 0.639,
+        "tcmid": "548",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Chùa dù": {
+        "alpha": 0.593,
+        "tcmid": "549",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chóc gai": {
+        "alpha": 0.485,
+        "tcmid": "550",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hổ vĩ": {
+        "alpha": 0.904,
+        "tcmid": "551",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Rau khúc": {
+        "alpha": 0.744,
+        "tcmid": "552",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mướp tây": {
+        "alpha": 0.436,
+        "tcmid": "553",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây nhót": {
+        "alpha": 0.726,
+        "tcmid": "554",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ruột gà": {
+        "alpha": 0.787,
+        "tcmid": "555",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Sấu": {
+        "alpha": 0.62,
+        "tcmid": "556",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây si": {
+        "alpha": 0.654,
+        "tcmid": "557",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Lười ươi": {
+        "alpha": 0.651,
+        "tcmid": "558",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây bã thuốc": {
+        "alpha": 0.3,
+        "tcmid": "559",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chanh": {
+        "alpha": 0.572,
+        "tcmid": "560",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dâu gia xoan": {
+        "alpha": 0.564,
+        "tcmid": "561",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tri mẫu": {
+        "alpha": 0.815,
+        "tcmid": "562",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Mù mắt": {
+        "alpha": 0.65,
+        "tcmid": "563",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hồng xiêm": {
+        "alpha": 0.555,
+        "tcmid": "564",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thủy tiên": {
+        "alpha": 0.586,
+        "tcmid": "565",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sen cạn": {
+        "alpha": 0.754,
+        "tcmid": "566",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "La hán (Quả)": {
+        "alpha": 0.572,
+        "tcmid": "567",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bạch quả": {
+        "alpha": 0.495,
+        "tcmid": "568",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây nắp ấm": {
+        "alpha": 0.559,
+        "tcmid": "569",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Khoản đông hoa": {
+        "alpha": 0.741,
+        "tcmid": "570",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bình vôi": {
+        "alpha": 0.674,
+        "tcmid": "571",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Lạc tiên": {
+        "alpha": 0.607,
+        "tcmid": "572",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Sen (Tâm sen)": {
+        "alpha": 0.629,
+        "tcmid": "573",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây vông nem": {
+        "alpha": 0.516,
+        "tcmid": "574",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Táo ta (Nhân hạt)": {
+        "alpha": 0.571,
+        "tcmid": "575",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Long nhãn": {
+        "alpha": 0.501,
+        "tcmid": "576",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây hoa nhài": {
+        "alpha": 0.556,
+        "tcmid": "577",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sì to": {
+        "alpha": 0.802,
+        "tcmid": "578",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cây xấu hổ": {
+        "alpha": 0.438,
+        "tcmid": "579",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thuyền thuế": {
+        "alpha": 0.497,
+        "tcmid": "580",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Trân châu": {
+        "alpha": 0.412,
+        "tcmid": "581",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ngưu hoàng": {
+        "alpha": 0.379,
+        "tcmid": "582",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thiên trúc hoàng": {
+        "alpha": 0.572,
+        "tcmid": "583",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chỉ cụ": {
+        "alpha": 0.507,
+        "tcmid": "584",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chu sa - Thần sa": {
+        "alpha": 0.864,
+        "tcmid": "585",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Kỷ tử": {
+        "alpha": 0.558,
+        "tcmid": "596",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thỏ ty tử": {
+        "alpha": 0.793,
+        "tcmid": "597",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây sữa": {
+        "alpha": 0.745,
+        "tcmid": "598",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây xộp": {
+        "alpha": 0.569,
+        "tcmid": "599",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phá cố chỉ": {
+        "alpha": 0.917,
+        "tcmid": "600",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Bạng hoa": {
+        "alpha": 0.64,
+        "tcmid": "601",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Quế Thanh Hóa": {
+        "alpha": 0.827,
+        "tcmid": "602",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Quế quan": {
+        "alpha": 0.809,
+        "tcmid": "603",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cam thảo bắc": {
+        "alpha": 0.662,
+        "tcmid": "604",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cam thảo dây": {
+        "alpha": 0.713,
+        "tcmid": "605",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cam thảo nam": {
+        "alpha": 0.694,
+        "tcmid": "606",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây sóng rắn": {
+        "alpha": 0.428,
+        "tcmid": "607",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ngũ vị tử": {
+        "alpha": 0.609,
+        "tcmid": "608",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cải xoong": {
+        "alpha": 0.761,
+        "tcmid": "609",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Âu ô đầu": {
+        "alpha": 0.829,
+        "tcmid": "610",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Ô đầu và phụ tử": {
+        "alpha": 0.492,
+        "tcmid": "611",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ô đầu Việt Nam": {
+        "alpha": 0.679,
+        "tcmid": "612",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đông trùng hạ thảo": {
+        "alpha": 0.623,
+        "tcmid": "613",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hạt gấc": {
+        "alpha": 0.582,
+        "tcmid": "614",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hoàng kỳ": {
+        "alpha": 0.653,
+        "tcmid": "615",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hồng đằng": {
+        "alpha": 0.633,
+        "tcmid": "616",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Kẹo mạch nha": {
+        "alpha": 0.681,
+        "tcmid": "617",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Kim anh (Quả)": {
+        "alpha": 0.816,
+        "tcmid": "618",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Tầm xuân": {
+        "alpha": 0.718,
+        "tcmid": "619",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hồ đào (Hạt)": {
+        "alpha": 0.647,
+        "tcmid": "620",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đào tiên": {
+        "alpha": 0.88,
+        "tcmid": "621",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Vừng (Hạt)": {
+        "alpha": 0.766,
+        "tcmid": "622",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bổ béo": {
+        "alpha": 0.586,
+        "tcmid": "623",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cát sâm": {
+        "alpha": 0.417,
+        "tcmid": "624",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Công cộng": {
+        "alpha": 0.452,
+        "tcmid": "625",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây cơm nếp": {
+        "alpha": 0.74,
+        "tcmid": "626",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cây lá dứa": {
+        "alpha": 0.505,
+        "tcmid": "627",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dâm dương hoắc": {
+        "alpha": 0.449,
+        "tcmid": "628",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dâu rượu": {
+        "alpha": 0.486,
+        "tcmid": "629",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đại táo": {
+        "alpha": 0.497,
+        "tcmid": "630",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ô môi": {
+        "alpha": 0.728,
+        "tcmid": "631",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Sâm cau": {
+        "alpha": 0.576,
+        "tcmid": "632",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sơn thù du": {
+        "alpha": 0.394,
+        "tcmid": "633",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thanh thất": {
+        "alpha": 0.605,
+        "tcmid": "634",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thổ tam thất": {
+        "alpha": 0.633,
+        "tcmid": "635",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tỏa dương": {
+        "alpha": 0.528,
+        "tcmid": "636",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vú bò": {
+        "alpha": 0.773,
+        "tcmid": "637",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ca cao": {
+        "alpha": 0.537,
+        "tcmid": "638",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dừa": {
+        "alpha": 0.766,
+        "tcmid": "639",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cọ dầu": {
+        "alpha": 0.69,
+        "tcmid": "640",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Coca": {
+        "alpha": 0.739,
+        "tcmid": "641",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cola": {
+        "alpha": 0.435,
+        "tcmid": "642",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Vú sữa": {
+        "alpha": 0.615,
+        "tcmid": "643",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Lêkima": {
+        "alpha": 0.592,
+        "tcmid": "644",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sầu riêng": {
+        "alpha": 0.387,
+        "tcmid": "645",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dưa hấu": {
+        "alpha": 0.766,
+        "tcmid": "646",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đậu nành": {
+        "alpha": 0.477,
+        "tcmid": "647",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Đậu xanh": {
+        "alpha": 0.509,
+        "tcmid": "648",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Nhục thung dung": {
+        "alpha": 0.448,
+        "tcmid": "649",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tích dương": {
+        "alpha": 0.705,
+        "tcmid": "650",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tầm sét": {
+        "alpha": 0.371,
+        "tcmid": "651",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Cây xa kê": {
+        "alpha": 0.693,
+        "tcmid": "652",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Lộc nhung, mê nhung": {
+        "alpha": 0.757,
+        "tcmid": "653",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Lộc giác": {
+        "alpha": 0.681,
+        "tcmid": "654",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Cao ban long": {
+        "alpha": 0.707,
+        "tcmid": "655",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "A giao - Minh giao": {
+        "alpha": 0.714,
+        "tcmid": "656",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Nhau sản phụ": {
+        "alpha": 0.458,
+        "tcmid": "657",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hải mã": {
+        "alpha": 0.815,
+        "tcmid": "658",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Huyết lình": {
+        "alpha": 0.531,
+        "tcmid": "659",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Tắc kè": {
+        "alpha": 0.59,
+        "tcmid": "660",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Mật ong": {
+        "alpha": 0.55,
+        "tcmid": "661",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Nọc ong": {
+        "alpha": 0.674,
+        "tcmid": "662",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Ong đen": {
+        "alpha": 0.519,
+        "tcmid": "663",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Yến": {
+        "alpha": 0.61,
+        "tcmid": "664",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bạch cương tàm": {
+        "alpha": 0.415,
+        "tcmid": "665",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Bọ cạp": {
+        "alpha": 0.775,
+        "tcmid": "666",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Nhựa cóc": {
+        "alpha": 0.701,
+        "tcmid": "667",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Dạ minh sa": {
+        "alpha": 0.556,
+        "tcmid": "668",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Con dế": {
+        "alpha": 0.53,
+        "tcmid": "669",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Nước bọt": {
+        "alpha": 0.697,
+        "tcmid": "670",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Nước tiểu": {
+        "alpha": 0.494,
+        "tcmid": "671",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phân người": {
+        "alpha": 0.619,
+        "tcmid": "672",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Giun đất": {
+        "alpha": 0.774,
+        "tcmid": "673",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Xương hổ": {
+        "alpha": 0.478,
+        "tcmid": "674",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Khỉ": {
+        "alpha": 0.655,
+        "tcmid": "675",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Long duyên hương": {
+        "alpha": 0.647,
+        "tcmid": "676",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hổ phách": {
+        "alpha": 0.585,
+        "tcmid": "677",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Miết giáp": {
+        "alpha": 0.524,
+        "tcmid": "678",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Nhân trung bạch": {
+        "alpha": 0.782,
+        "tcmid": "679",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Nhện": {
+        "alpha": 0.51,
+        "tcmid": "680",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ngũ linh chi": {
+        "alpha": 0.328,
+        "tcmid": "681",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Rắn": {
+        "alpha": 0.696,
+        "tcmid": "682",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Xạ hương": {
+        "alpha": 0.42,
+        "tcmid": "683",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Quy bản và cao quy bản": {
+        "alpha": 0.704,
+        "tcmid": "684",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tàm sa": {
+        "alpha": 0.8,
+        "tcmid": "685",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Tê giác (Sừng)": {
+        "alpha": 0.694,
+        "tcmid": "686",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thạch sùng": {
+        "alpha": 0.761,
+        "tcmid": "687",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Tóc rối": {
+        "alpha": 0.903,
+        "tcmid": "688",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Da voi": {
+        "alpha": 0.745,
+        "tcmid": "689",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Xuyên sơn giáp": {
+        "alpha": 0.65,
+        "tcmid": "690",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Bìm bịp": {
+        "alpha": 0.845,
+        "tcmid": "691",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cà cuống": {
+        "alpha": 0.863,
+        "tcmid": "692",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cá nóc": {
+        "alpha": 0.865,
+        "tcmid": "693",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Cá trắm (Mật)": {
+        "alpha": 0.526,
+        "tcmid": "694",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chim sẻ": {
+        "alpha": 0.397,
+        "tcmid": "695",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Chó (Thịt)": {
+        "alpha": 0.517,
+        "tcmid": "696",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Dê (Thịt)": {
+        "alpha": 0.706,
+        "tcmid": "697",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đồi mồi (Vảy)": {
+        "alpha": 0.624,
+        "tcmid": "698",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Kỳ đà": {
+        "alpha": 0.569,
+        "tcmid": "699",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Con nhím (Dạ dày)": {
+        "alpha": 0.684,
+        "tcmid": "700",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thằn lằn": {
+        "alpha": 0.379,
+        "tcmid": "701",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Trăn": {
+        "alpha": 0.621,
+        "tcmid": "702",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Con rươi": {
+        "alpha": 0.768,
+        "tcmid": "703",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Con sam": {
+        "alpha": 0.682,
+        "tcmid": "704",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đỉa": {
+        "alpha": 0.704,
+        "tcmid": "705",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hải sâm": {
+        "alpha": 0.84,
+        "tcmid": "706",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Con quy (Thịt, mai)": {
+        "alpha": 0.59,
+        "tcmid": "707",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Ốc sên": {
+        "alpha": 0.502,
+        "tcmid": "708",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Sâu ban miêu": {
+        "alpha": 0.778,
+        "tcmid": "709",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Diêm sinh": {
+        "alpha": 0.776,
+        "tcmid": "710",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Duyên đơn": {
+        "alpha": 0.684,
+        "tcmid": "711",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Đảm phàn": {
+        "alpha": 0.576,
+        "tcmid": "712",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Hoạt thạch": {
+        "alpha": 0.6,
+        "tcmid": "714",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Hùng hoàng và Thư hoàng": {
+        "alpha": 0.408,
+        "tcmid": "715",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Khinh phấn": {
+        "alpha": 0.767,
+        "tcmid": "716",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Long cốt": {
+        "alpha": 0.762,
+        "tcmid": "717",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Lô cam thạch": {
+        "alpha": 0.403,
+        "tcmid": "718",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Lục phàn": {
+        "alpha": 0.73,
+        "tcmid": "719",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Mật đà tăng": {
+        "alpha": 0.661,
+        "tcmid": "720",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Muối ăn": {
+        "alpha": 0.447,
+        "tcmid": "721",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phèn chua": {
+        "alpha": 0.419,
+        "tcmid": "722",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Phục long can": {
+        "alpha": 0.656,
+        "tcmid": "723",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thạch cao": {
+        "alpha": 0.54,
+        "tcmid": "724",
+        "role": "The Buffer (Assistant)",
+        "tagClass": "bg-green-100 text-green-800",
+        "type": "buffer"
+    },
+    "Thạch tín": {
+        "alpha": 0.873,
+        "tcmid": "725",
+        "role": "The Architect (Sovereign)",
+        "tagClass": "bg-red-100 text-red-800",
+        "type": "hub"
+    },
+    "Thăng dược": {
+        "alpha": 0.743,
+        "tcmid": "726",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    },
+    "Thủy ngân": {
+        "alpha": 0.671,
+        "tcmid": "727",
+        "role": "The Bridge (Minister/Courier)",
+        "tagClass": "bg-blue-100 text-blue-800",
+        "type": "bridge"
+    }
+}
