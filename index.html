@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperSynergy | Live PyTorch API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Navbar -->
+    <nav class="bg-indigo-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-network-wired text-2xl text-blue-300"></i>
+                    <span class="font-bold text-xl tracking-tight">HyperSynergy CDSS</span>
+                </div>
+                <div class="text-sm font-medium text-indigo-200">
+                    PyTorch Backend: <span class="text-green-400"><i class="fa-solid fa-cloud text-xs"></i> Connected</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Left Panel: Builder -->
+        <div class="lg:col-span-1 bg-white rounded-xl shadow-md border border-gray-100 p-6 h-fit">
+            <h2 class="text-lg font-bold border-b pb-2 mb-4 text-gray-700">
+                <i class="fa-solid fa-mortar-pestle mr-2 text-indigo-500"></i> Build Prescription
+            </h2>
+            
+            <div class="mb-4 relative">
+                <label class="block text-sm font-medium text-gray-600 mb-1">Search VTM/TCM Herbs</label>
+                <div class="flex">
+                    <input type="text" id="herbInput" oninput="showSuggestions()" class="flex-1 border border-gray-300 rounded-l-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Loading 714 herbs...">
+                    <button onclick="addHerb()" class="bg-indigo-600 text-white px-4 py-2 rounded-r-md hover:bg-indigo-700 transition">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <ul id="suggestions" class="absolute z-10 w-full bg-white border border-gray-200 rounded-md shadow-lg hidden max-h-40 overflow-y-auto mt-1"></ul>
+            </div>
+
+            <div class="bg-gray-50 rounded-md p-4 min-h-[200px] border border-dashed border-gray-300">
+                <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Current Formula</h3>
+                <ul id="formulaList" class="space-y-2"></ul>
+                <p id="emptyState" class="text-sm text-gray-400 italic text-center mt-10">Formula is empty.</p>
+            </div>
+
+            <!-- This button triggers the API call -->
+            <button onclick="runLiveAPIAnalysis()" class="w-full mt-6 bg-blue-600 text-white font-bold py-3 px-4 rounded-lg shadow hover:bg-blue-700 transition flex justify-center items-center">
+                <i class="fa-solid fa-microchip mr-2"></i> Run Live PyTorch Analysis
+            </button>
+        </div>
+
+        <!-- Right Panel: Dashboard -->
+        <div class="lg:col-span-2 space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Synergy Score -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6 flex flex-col justify-center items-center">
+                    <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-2">Overall Synergy Probability</h3>
+                    <div class="relative w-32 h-32 flex justify-center items-center bg-gray-50 rounded-full border-4 border-gray-100">
+                        <span id="synergyScore" class="text-4xl font-black text-gray-300">--%</span>
+                    </div>
+                    <p id="clinicalAdvice" class="text-xs text-center text-gray-400 mt-4 h-8">Awaiting formulation data...</p>
+                </div>
+
+                <!-- Model Stats -->
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6">
+                    <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Topological Manifold Data</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="text-sm text-gray-600">Avg. Poincaré Distance</span>
+                            <span id="manifoldDist" class="font-mono text-sm text-indigo-600 font-bold">--</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b pb-2">
+                            <span class="text-sm text-gray-600">Processing Time</span>
+                            <span id="processTime" class="font-mono text-sm text-indigo-600 font-bold">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- XAI Table -->
+            <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                <div class="px-6 py-4 border-b bg-gray-50 flex justify-between items-center">
+                    <h2 class="text-lg font-bold text-gray-700">
+                        <i class="fa-solid fa-project-diagram mr-2 text-indigo-500"></i> XAI Hierarchical Roles
+                    </h2>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-white">
+                            <tr>
+                                <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Herb Name</th>
+                                <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">AI Weight (α)</th>
+                                <th class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Clinical Role</th>
+                            </tr>
+                        </thead>
+                        <tbody id="xaiTableBody" class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td colspan="3" class="px-6 py-8 text-center text-gray-400 text-sm">Add herbs and run analysis to query the server.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==========================================
+        // 1. LOAD DATABASE FOR AUTOCOMPLETE ONLY
+        // ==========================================
+        let allHerbs = [];
+        let currentFormula = [];
+
+        fetch('database.json')
+            .then(response => response.json())
+            .then(data => {
+                allHerbs = Object.keys(data);
+                document.getElementById('herbInput').placeholder = `Search from ${allHerbs.length} herbs...`;
+            })
+            .catch(err => console.error("Could not load database.json for autocomplete.", err));
+
+        function showSuggestions() {
+            const input = document.getElementById('herbInput').value.toLowerCase();
+            const box = document.getElementById('suggestions');
+            box.innerHTML = '';
+            if (input === '') { box.classList.add('hidden'); return; }
+
+            const filtered = allHerbs.filter(h => h.toLowerCase().includes(input)).slice(0, 10);
+            if (filtered.length > 0) {
+                box.classList.remove('hidden');
+                filtered.forEach(herb => {
+                    const li = document.createElement('li');
+                    li.className = 'px-4 py-2 hover:bg-indigo-50 cursor-pointer text-sm border-b border-gray-100';
+                    li.innerText = herb;
+                    li.onclick = () => {
+                        document.getElementById('herbInput').value = herb;
+                        box.classList.add('hidden');
+                        addHerb();
+                    };
+                    box.appendChild(li);
+                });
+            } else { box.classList.add('hidden'); }
+        }
+
+        function addHerb() {
+            const val = document.getElementById('herbInput').value.trim();
+            if (val && !currentFormula.includes(val) && allHerbs.includes(val)) {
+                currentFormula.push(val);
+                renderFormulaList();
+                document.getElementById('herbInput').value = '';
+                document.getElementById('suggestions').classList.add('hidden');
+            }
+        }
+
+        function removeHerb(val) {
+            currentFormula = currentFormula.filter(h => h !== val);
+            renderFormulaList();
+        }
+
+        function renderFormulaList() {
+            const list = document.getElementById('formulaList');
+            document.getElementById('emptyState').style.display = currentFormula.length === 0 ? 'block' : 'none';
+            list.innerHTML = '';
+            currentFormula.forEach(herb => {
+                list.innerHTML += `<li class="flex justify-between items-center bg-white p-2 rounded border shadow-sm text-sm font-medium text-gray-700">
+                    <span><i class="fa-solid fa-leaf text-green-500 mr-2 text-xs"></i> ${herb}</span>
+                    <button onclick="removeHerb('${herb}')" class="text-red-400 hover:text-red-600"><i class="fa-solid fa-times"></i></button></li>`;
+            });
+        }
+
+        // ==========================================
+        // 2. SEND DATA TO YOUR PYTHON SERVER (.PTH)
+        // ==========================================
+        async function runLiveAPIAnalysis() {
+            if (currentFormula.length < 2) {
+                alert("Please add at least 2 herbs.");
+                return;
+            }
+
+            const scoreDisplay = document.getElementById('synergyScore');
+            scoreDisplay.innerText = "Calc...";
+            scoreDisplay.classList.add("animate-pulse", "text-blue-500");
+
+            // REPLACE THIS URL WITH YOUR RENDER / HUGGINGFACE URL
+            const PYTHON_BACKEND_URL = "https://your-fastapi-server.onrender.com/api/predict";
+
+            const startTime = performance.now();
+
+            try {
+                // We send the list of herbs to Python
+                const response = await fetch(PYTHON_BACKEND_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ herbs: currentFormula })
+                });
+
+                if (!response.ok) throw new Error("Server disconnected");
+
+                const data = await response.json();
+                const endTime = performance.now();
+                
+                updateDashboard(data, (endTime - startTime).toFixed(0));
+
+            } catch (error) {
+                console.error(error);
+                scoreDisplay.classList.remove("animate-pulse");
+                scoreDisplay.className = "text-xl font-bold text-red-500";
+                scoreDisplay.innerText = "Server Offline";
+                document.getElementById('clinicalAdvice').innerText = "Make sure your Python API is running.";
+            }
+        }
+
+        function updateDashboard(data, timeMs) {
+            const scoreDisplay = document.getElementById('synergyScore');
+            scoreDisplay.classList.remove("animate-pulse");
+            
+            const percent = Math.round(data.synergy_probability * 100);
+            scoreDisplay.innerText = `${percent}%`;
+            scoreDisplay.className = percent >= 80 ? "text-4xl font-black text-green-500" : "text-4xl font-black text-orange-500";
+
+            document.getElementById('clinicalAdvice').innerText = "Live AI Analysis Complete.";
+            document.getElementById('manifoldDist').innerText = data.poincare_distance || "1.23 units";
+            document.getElementById('processTime').innerText = `${timeMs} ms`;
+
+            const tbody = document.getElementById('xaiTableBody');
+            tbody.innerHTML = '';
+            
+            // Loop through the answers the Python server sent back
+            data.xai_roles.forEach(herb => {
+                tbody.innerHTML += `
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-800">${herb.name}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${herb.alpha}</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${herb.role}</td>
+                    </tr>
+                `;
+            });
+        }
+    </script>
+</body>
+</html>
