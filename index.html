@@ -7,14 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Custom scrollbar for the suggestions dropdown */
+        /* Custom scrollbar for the suggestions dropdown & modal */
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: #c7c7c7; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #a0a0a0; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen relative">
 
     <!-- Navbar -->
     <nav class="bg-indigo-900 text-white shadow-lg border-b-4 border-indigo-500">
@@ -35,18 +35,26 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow">
         
         <!-- Welcome & Instructions Banner -->
-        <div class="bg-white rounded-xl shadow-sm border border-indigo-100 p-6 mb-8 flex flex-col md:flex-row items-center md:items-start gap-4">
-            <div class="bg-indigo-100 text-indigo-600 p-4 rounded-full">
-                <i class="fa-solid fa-robot text-2xl"></i>
-            </div>
-            <div>
-                <h1 class="text-xl font-bold text-gray-800 mb-1">Welcome to the AI Synergy Predictor</h1>
-                <p class="text-sm text-gray-600 mb-3">This tool uses a mathematical graph neural network to predict if a combination of traditional herbs will be clinically safe and effective. You don't need to be an IT expert—just follow these steps:</p>
-                <div class="flex flex-wrap gap-4 text-xs font-semibold text-gray-500">
-                    <span class="bg-gray-100 px-3 py-1.5 rounded-md"><strong class="text-indigo-600">1.</strong> Search & Add Herbs</span>
-                    <span class="bg-gray-100 px-3 py-1.5 rounded-md"><strong class="text-indigo-600">2.</strong> Click 'Run AI Analysis'</span>
-                    <span class="bg-gray-100 px-3 py-1.5 rounded-md"><strong class="text-indigo-600">3.</strong> Review the Synergy Score & Roles</span>
+        <div class="bg-white rounded-xl shadow-sm border border-indigo-100 p-6 mb-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-4">
+                <div class="bg-indigo-100 text-indigo-600 p-4 rounded-full hidden md:block">
+                    <i class="fa-solid fa-robot text-2xl"></i>
                 </div>
+                <div class="text-center md:text-left">
+                    <h1 class="text-xl font-bold text-gray-800 mb-1">Welcome to the AI Synergy Predictor</h1>
+                    <p class="text-sm text-gray-600 mb-3">This tool uses a geometric graph neural network to predict if a combination of traditional herbs will be clinically safe and effective.</p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-3 text-xs font-semibold text-gray-500">
+                        <span class="bg-gray-100 px-3 py-1.5 rounded-md"><strong class="text-indigo-600">1.</strong> Search Herbs</span>
+                        <span class="bg-gray-100 px-3 py-1.5 rounded-md"><strong class="text-indigo-600">2.</strong> Run AI Analysis</span>
+                        <span class="bg-gray-100 px-3 py-1.5 rounded-md"><strong class="text-indigo-600">3.</strong> Review Results</span>
+                    </div>
+                </div>
+            </div>
+            <!-- User Guide Button -->
+            <div class="flex-shrink-0 mt-2 md:mt-0 w-full md:w-auto">
+                <button onclick="openGuideModal()" class="bg-indigo-600 text-white px-5 py-3 rounded-lg shadow-md hover:bg-indigo-700 transition flex items-center justify-center font-bold text-sm w-full">
+                    <i class="fa-solid fa-book-open mr-2"></i> How to Use This App
+                </button>
             </div>
         </div>
 
@@ -65,7 +73,7 @@
                             <i class="fa-solid fa-plus"></i>
                         </button>
                     </div>
-                    <ul id="suggestions" class="absolute z-50 w-full bg-white border border-gray-200 rounded-md shadow-xl hidden max-h-48 overflow-y-auto mt-1 divide-y divide-gray-100"></ul>
+                    <ul id="suggestions" class="absolute z-40 w-full bg-white border border-gray-200 rounded-md shadow-xl hidden max-h-48 overflow-y-auto mt-1 divide-y divide-gray-100"></ul>
                 </div>
 
                 <div class="bg-gray-50 rounded-md p-4 min-h-[200px] border border-dashed border-gray-300 relative">
@@ -87,12 +95,11 @@
             <!-- Right Panel: Dashboard -->
             <div class="lg:col-span-2 space-y-6">
                 
-                <!-- NEW: 3-Column Metric Grid for Better Explainability -->
+                <!-- 3-Column Metric Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     
                     <!-- 1. Synergy Score -->
                     <div class="bg-white rounded-xl shadow-md border border-gray-100 p-5 flex flex-col justify-center items-center relative group">
-                        <!-- Tooltip Hover -->
                         <div class="absolute top-3 right-3 cursor-pointer">
                             <i class="fa-solid fa-circle-question text-gray-300 hover:text-indigo-500 transition"></i>
                             <div class="opacity-0 group-hover:opacity-100 transition-opacity absolute right-0 top-6 w-56 bg-gray-800 text-white text-xs rounded-md p-3 shadow-lg pointer-events-none z-20">
@@ -154,7 +161,7 @@
 
                 </div>
 
-                <!-- NEW: Final Interpretation & Recommendation Panel -->
+                <!-- Final Interpretation & Recommendation Panel -->
                 <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6 relative">
                     <h3 class="text-sm font-bold text-gray-800 mb-3 flex items-center">
                         <i class="fa-solid fa-clipboard-check text-indigo-500 mr-2 text-lg"></i> Executive Summary & Recommendation
@@ -211,6 +218,133 @@
                 </div>
             </div>
         </div>
+
+        <!-- ============================================== -->
+        <!-- USER GUIDE MODAL OVERLAY -->
+        <!-- ============================================== -->
+        <div id="guideModal" class="fixed inset-0 bg-gray-900 bg-opacity-70 z-50 hidden flex justify-center items-center p-4 backdrop-blur-sm transition-opacity">
+            <div class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden transform transition-transform scale-100">
+                
+                <!-- Modal Header -->
+                <div class="px-6 py-4 border-b border-gray-200 flex justify-between items-center bg-gray-50">
+                    <h2 class="text-xl font-bold text-indigo-900 flex items-center">
+                        <i class="fa-solid fa-book-medical mr-3 text-indigo-600"></i> HyperSynergy CDSS: Official User Guide
+                    </h2>
+                    <button onclick="closeGuideModal()" class="text-gray-400 hover:text-red-500 transition text-3xl leading-none">&times;</button>
+                </div>
+                
+                <!-- Modal Body (Scrollable) -->
+                <div class="p-6 md:p-8 overflow-y-auto space-y-8 text-gray-700 text-sm md:text-base">
+                    
+                    <!-- Intro -->
+                    <div>
+                        <p class="mb-4">Welcome to the <strong>HyperSynergy Clinical Decision Support System (CDSS)</strong>! This website acts as an intelligent assistant for Traditional Medicine (TM) practitioners and researchers. It uses a powerful AI (Graph Neural Network) to read traditional herbal formulas and predict if the combination of herbs will be safe, balanced, and effective.</p>
+                        <p class="bg-indigo-50 text-indigo-800 p-3 rounded-md border border-indigo-100 italic">You do <strong>not</strong> need to be a computer scientist or a master herbalist to use this tool. This guide will walk you through the interface and explain exactly how to interpret the AI's results.</p>
+                    </div>
+
+                    <!-- Section 1 -->
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2 mb-3">🖥️ 1. Understanding the Interface</h3>
+                        <ul class="space-y-3 list-disc pl-5">
+                            <li><strong>The Left Panel (Build Prescription):</strong> This is your workspace. Here, you will search for herbs from our 714-herb database and combine them into a digital "formula."</li>
+                            <li><strong>The Top Right Panel (Dashboard):</strong> This is the AI's quick-glance summary. It gives you the overall Synergy Score, the Biological Distance, and a Formula Balance check.</li>
+                            <li><strong>The Bottom Right Panel (AI Role Assignments):</strong> This detailed table explains <em>why</em> the AI gave you that score. It breaks down every herb and reveals its specific job in the formula.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2 mb-3">🛠️ 2. Step-by-Step: How to Use the App</h3>
+                        <div class="space-y-4">
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                                <h4 class="font-bold text-indigo-700 mb-2">Step 1: Search and Add Herbs</h4>
+                                <ul class="list-disc pl-5 space-y-1 text-sm">
+                                    <li>Go to the <strong>Build Prescription</strong> panel on the left.</li>
+                                    <li>Click the search bar and type an herb's name (e.g., <em>Đương Quy</em> or <em>Đại táo</em>).</li>
+                                    <li>Click the herb you want, or click the <strong>blue "+" button</strong> to add it to your "Current Formula" list.</li>
+                                    <li><em class="text-red-500 font-medium">Note: You must add at least <strong>two</strong> herbs to run an analysis.</em></li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                                <h4 class="font-bold text-indigo-700 mb-2">Step 2: Run the AI</h4>
+                                <p class="text-sm">Once your herbs are listed, click the big blue <strong>"Run Live PyTorch Analysis"</strong> button. The website will send your formula to our cloud AI, performing millions of calculations in milliseconds.</p>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                                <h4 class="font-bold text-indigo-700 mb-2">Step 3: Read the Executive Summary</h4>
+                                <p class="text-sm">Look at the <strong>Executive Summary & Recommendation</strong> box. It will explicitly tell you if the formula is highly viable, structurally incomplete, or at a high risk of clinical conflict.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 border-b border-gray-200 pb-2 mb-4">📊 3. How to Understand the Results</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Synergy -->
+                            <div>
+                                <h4 class="font-bold text-gray-800 flex items-center mb-2"><i class="fa-solid fa-circle text-green-500 text-xs mr-2"></i> Overall Synergy Probability</h4>
+                                <p class="text-sm mb-2">This is the ultimate safety and effectiveness score.</p>
+                                <ul class="text-sm space-y-1 list-inside">
+                                    <li><span class="text-green-600 font-bold">80% - 100%:</span> Excellent. Works perfectly together.</li>
+                                    <li><span class="text-blue-600 font-bold">50% - 79%:</span> Moderate. Could be stronger.</li>
+                                    <li><span class="text-orange-600 font-bold">Below 50%:</span> Poor. High risk of side effects.</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Poincare -->
+                            <div>
+                                <h4 class="font-bold text-gray-800 flex items-center mb-2"><i class="fa-solid fa-ruler text-indigo-500 text-xs mr-2"></i> Biological Distance (Poincaré Metric)</h4>
+                                <p class="text-sm mb-2">The AI maps herbs in a 3D hyperbolic geometry.</p>
+                                <ul class="text-sm space-y-1 list-inside">
+                                    <li><span class="text-green-600 font-bold">Tight (Good):</span> Herbs target similar diseases/pathways.</li>
+                                    <li><span class="text-red-600 font-bold">Far (Poor):</span> Herbs pull the body in conflicting directions.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Balance -->
+                            <div class="md:col-span-2 bg-yellow-50 p-4 rounded-lg border border-yellow-100">
+                                <h4 class="font-bold text-gray-800 flex items-center mb-2"><i class="fa-solid fa-scale-balanced text-yellow-600 text-xs mr-2"></i> Formula Balance Composition</h4>
+                                <p class="text-sm mb-2">Ancient medicine relies on the <em>Quân-Thần-Tá-Sứ</em> rule. A safe formula must be balanced.</p>
+                                <ul class="text-sm space-y-2 list-disc pl-5">
+                                    <li><strong>Main Healer (Architect):</strong> The formula <em>must</em> have an aggressive herb to fight the disease.</li>
+                                    <li><strong>Protector (Buffer):</strong> The formula <em>must</em> have a gentle herb (like Honey or Đại táo) to protect the stomach from the harsh Main Healer.</li>
+                                </ul>
+                                <p class="text-xs text-red-600 mt-2 font-bold"><i class="fa-solid fa-circle-exclamation"></i> If the AI gives you a red "X" here, it means you forgot a crucial piece of the puzzle!</p>
+                            </div>
+                        </div>
+
+                        <!-- Roles -->
+                        <div class="mt-6">
+                            <h4 class="font-bold text-gray-800 flex items-center mb-2"><i class="fa-solid fa-table-list text-gray-500 text-xs mr-2"></i> The XAI Table (Role Assignments)</h4>
+                            <p class="text-sm mb-3">XAI stands for "Explainable AI." The AI scores every herb's importance ($\alpha$ Weight) from 0.0 to 1.0. Based on that score, it automatically categorizes the herb:</p>
+                            <div class="flex flex-col gap-2">
+                                <div class="bg-white border border-gray-200 p-2 rounded flex items-center text-sm"><span class="w-3 h-3 bg-red-100 border border-red-300 rounded-full inline-block mr-3"></span> <strong>Architect (Sovereign):</strong> The boss. Directs the healing.</div>
+                                <div class="bg-white border border-gray-200 p-2 rounded flex items-center text-sm"><span class="w-3 h-3 bg-blue-100 border border-blue-300 rounded-full inline-block mr-3"></span> <strong>Bridge (Minister):</strong> The transporter. Moves medicine to the right organ.</div>
+                                <div class="bg-white border border-gray-200 p-2 rounded flex items-center text-sm"><span class="w-3 h-3 bg-green-100 border border-green-300 rounded-full inline-block mr-3"></span> <strong>Buffer (Assistant):</strong> The bodyguard. Protects the patient from side effects.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pro Tip -->
+                    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl p-5 text-white shadow-md">
+                        <h4 class="font-bold text-lg mb-2"><i class="fa-solid fa-lightbulb text-yellow-300 mr-2"></i> Pro-Tip for your First Try!</h4>
+                        <p class="text-sm text-indigo-100 mb-3">Want to see a <strong>Perfect Synergy</strong> score? Try adding these three herbs together and click Run:</p>
+                        <ol class="list-decimal pl-5 space-y-1 text-sm font-medium">
+                            <li><strong>Đương Quy</strong> (The Architect - builds blood)</li>
+                            <li><strong>Xuyên khung</strong> (The Bridge - moves blood)</li>
+                            <li><strong>Đại táo</strong> (The Buffer - protects the stomach)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="px-6 py-4 border-t border-gray-200 bg-gray-50 flex justify-end">
+                    <button onclick="closeGuideModal()" class="bg-indigo-600 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-indigo-700 shadow-sm transition">Got it! Let's Build</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- About & Contact Footer -->
@@ -252,17 +386,30 @@
     <!-- JavaScript Application Logic -->
     <script>
         // ==========================================
+        // 0. USER GUIDE MODAL LOGIC
+        // ==========================================
+        function openGuideModal() {
+            document.getElementById('guideModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevents background scrolling when open
+        }
+
+        function closeGuideModal() {
+            document.getElementById('guideModal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Restores scrolling
+        }
+
+        // ==========================================
         // 1. LOAD DATABASE FOR AUTOCOMPLETE & GLOBAL WEIGHTS
         // ==========================================
         let allHerbs = [];
         let currentFormula = [];
-        let herbDatabase = {}; // Stores the globally accurate weights from the JSON file
+        let herbDatabase = {}; 
 
         // Load the JSON file (must be in the same GitHub repository)
         fetch('database.json')
             .then(response => response.json())
             .then(data => {
-                herbDatabase = data; // Save the full database in memory
+                herbDatabase = data; 
                 allHerbs = Object.keys(data);
                 document.getElementById('herbInput').placeholder = `Search from ${allHerbs.length} herbs...`;
             })
